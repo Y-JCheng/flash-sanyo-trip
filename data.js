@@ -133,7 +133,19 @@ window.TRIP = {
       title: "鞆之浦 → 岡山",
       stay: { name: "岡山站附近", jp: "岡山駅（おかやまえき）", note: "住宿尚未填寫" },
       items: [
-        { k: "see", text: "早上慢慢逛鞆之浦：海港老街、常夜燈、福禪寺看海景", jp: "常夜燈（じょうやとう）／福禅寺（ふくぜんじ）", note: "早上人少又安靜", map: "福禅寺 対潮楼" },
+        { k: "see", text: "早上慢慢逛鞆之浦：海港老街、常夜燈、福禪寺看海景", jp: "常夜燈（じょうやとう）／福禅寺（ふくぜんじ）", note: "早上人少又安靜", map: "福禅寺 対潮楼",
+          recs: [
+            { g: "吃", list: [
+              { n: "Sabo Funabansho", d: "咖啡或定食", u: "https://maps.app.goo.gl/h47MZSAytREHLC9z8" }
+            ] },
+            { g: "參觀", list: [
+              { n: "Fukuzenji Temple Taichoroh（福禪寺 對潮樓）", d: "看景", u: "https://maps.app.goo.gl/CJvFxiuYLJyF3aUMA" },
+              { n: "Jōyatō Stone Lighthouse（常夜燈）", d: "鞆之浦的象徵", u: "https://maps.app.goo.gl/GbEYEtMQWEQQ7JHu6" },
+              { n: "Masuya Seiemon House（桝屋清右衛門宅）", d: "坂本龍馬躲過的老屋", u: "https://maps.app.goo.gl/rdV8m7TyHP6N4G2L7" },
+              { n: "Irohamaru Exhibition Hall（いろは丸展示館）", d: "坂本龍馬博物館", u: "https://maps.app.goo.gl/DRGYC8EYZx245ack7" },
+              { n: "TOMOTERASU Tomocho Townscape Preservation Center", d: "民俗博物館", u: "https://maps.app.goo.gl/hyXGr6cvoaBNZu2q7" }
+            ] }
+          ] },
         { k: "eat", text: "午餐：在鞆之浦吃，或回福山再吃，自己決定", jp: "鞆の浦（とものうら）／福山（ふくやま）", note: "看搭哪一班接駁車：早班車（11:23 前）可以回福山再吃，晚班車（14:00 以後）可以先在鞆之浦吃。", map: "鞆の浦 ランチ" },
         { k: "move", text: "搭鷗風亭的免費接駁車回福山（約 30 分）", jp: "ホテル鷗風亭 → 福山駅（ふくやまえき）", note: "入住（check in）時，跟櫃台說明天想搭哪一班。從旅館出發：9:03、10:13、11:23、14:00、15:25，約 30 分鐘到福山站。以上是 2025 年時刻表，請向旅館確認。", map: "福山駅" },
         { k: "move", transit: true, text: "福山搭新幹線到岡山（十幾分鐘），飯店放行李", jp: "福山 → 岡山駅（おかやまえき）", map: "岡山駅" },
