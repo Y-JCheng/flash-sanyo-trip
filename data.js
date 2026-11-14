@@ -44,8 +44,6 @@ window.TRIP = {
               { n: "Kurashiki Yoimachi Garden", d: "小竹林", u: "https://maps.app.goo.gl/zDV4HL1XtAJxUH2n7" }
             ] }
           ] },
-        { k: "see", text: "倉敷常春藤廣場（紅磚老工廠）", jp: "倉敷アイビースクエア（くらしき アイビースクエア）", map: "倉敷アイビースクエア" },
-        { k: "eat", text: "點心：橘香堂「むらすずめ」", jp: "橘香堂（きっこうどう）", map: "橘香堂 倉敷" },
         { k: "eat", text: "晚餐：Sawaraya（鰆魚料理），飯後散步看夜間點燈", jp: "鰆（さわら）料理", note: "記得訂位", url: "https://maps.app.goo.gl/pXb3qbkBSfRtVBzR7" }
       ]
     },
