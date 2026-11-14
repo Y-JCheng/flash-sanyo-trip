@@ -1,6 +1,6 @@
 // 離線快取：先看網路最新版，沒網路時用快取
-var CACHE = "sanyo-v12";
-var FILES = ["./", "index.html", "style.css", "app.js", "data.js", "icon.svg", "manifest.webmanifest"];
+var CACHE = "sanyo-v13";
+var FILES = ["./", "index.html", "style.css", "app.js", "data.js", "icon.svg", "manifest.webmanifest", "fonts/wenkai-regular.woff2", "fonts/wenkai-bold.woff2"];
 
 self.addEventListener("install", function (e) {
   e.waitUntil(caches.open(CACHE).then(function (c) { return c.addAll(FILES); }));

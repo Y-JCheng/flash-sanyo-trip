@@ -3,7 +3,7 @@
 // jp: 日文與假名；map: Google 地圖搜尋字
 window.TRIP = {
   title: "快閃山陽之旅",
-  sub: "岡山・倉敷・尾道 7天",
+  sub: "岡山・倉敷・尾道",
   days: [
     {
       id: "d1", date: "2026-11-15", label: "11/15", dow: "日",

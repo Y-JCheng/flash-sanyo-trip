@@ -1,10 +1,12 @@
+@font-face{font-family:"WenKai";src:url(fonts/wenkai-regular.woff2) format("woff2");font-weight:400;font-display:swap}
+@font-face{font-family:"WenKai";src:url(fonts/wenkai-bold.woff2) format("woff2");font-weight:500 900;font-display:swap}
 /* 侘寂：和紙質感、墨色、朱印 */
 :root{
   --paper:#ece6d8; --paper2:#f4f0e6; --ink:#2b2a27; --sub:#6f6a5f; --line:#cdc5b1;
   --sumi:#3a3935; --ai:#3f5a66; --shu:#a8402f; --moss:#6b7556; --kuri:#7a5c45;
   --move:var(--ai); --eat:var(--shu); --see:var(--moss); --stay:var(--kuri);
   --grain:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='220' height='220'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.8' numOctaves='3' stitchTiles='stitch'/%3E%3CfeColorMatrix values='0 0 0 0 .35 0 0 0 0 .3 0 0 0 0 .22 0 0 0 .55 0'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='.35'/%3E%3C/svg%3E");
-  --ink-hills:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 400 120' preserveAspectRatio='xMidYMax slice'%3E%3Cdefs%3E%3Cfilter id='b1'%3E%3CfeGaussianBlur stdDeviation='5'/%3E%3C/filter%3E%3Cfilter id='b2'%3E%3CfeGaussianBlur stdDeviation='2.5'/%3E%3C/filter%3E%3C/defs%3E%3Cpath filter='url(%23b1)' d='M-20 120 L40 60 Q70 40 110 70 L160 35 Q200 20 240 60 L300 40 Q350 30 430 90 V130 H-20Z' fill='%233a3935' opacity='.28'/%3E%3Cpath filter='url(%23b2)' d='M-20 125 Q60 80 120 100 T250 90 T430 108 V130 H-20Z' fill='%233a3935' opacity='.4'/%3E%3Ccircle cx='320' cy='28' r='13' fill='%23a8402f' opacity='.75'/%3E%3C/svg%3E");
+  --ink-hills:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 400 120' preserveAspectRatio='xMidYMax slice'%3E%3Cdefs%3E%3Cfilter id='b1'%3E%3CfeGaussianBlur stdDeviation='5'/%3E%3C/filter%3E%3Cfilter id='b2'%3E%3CfeGaussianBlur stdDeviation='2.5'/%3E%3C/filter%3E%3C/defs%3E%3Cpath filter='url(%23b1)' d='M-20 120 L40 60 Q70 40 110 70 L160 35 Q200 20 240 60 L300 40 Q350 30 430 90 V130 H-20Z' fill='%233a3935' opacity='.28'/%3E%3Cpath filter='url(%23b2)' d='M-20 125 Q60 80 120 100 T250 90 T430 108 V130 H-20Z' fill='%233a3935' opacity='.4'/%3E%3Ccircle cx='72' cy='34' r='13' fill='%23a8402f' opacity='.75'/%3E%3C/svg%3E");
 }
 @media (prefers-color-scheme:dark){
   :root{--paper:#1f1e1b; --paper2:#282621; --ink:#e7e1d2; --sub:#a39d8e; --line:#3d3a33;
@@ -13,12 +15,19 @@
 *{box-sizing:border-box}
 html{-webkit-text-size-adjust:100%}
 body{margin:0;background:var(--paper) var(--grain);color:var(--ink);
-  font:19px/1.7 "Hiragino Mincho ProN","Noto Serif TC","Songti TC","PMingLiU",serif;
+  font:20px/1.75 "WenKai","Kaiti TC","BiauKai","Hiragino Mincho ProN","Noto Serif TC",serif;
   padding-bottom:env(safe-area-inset-bottom)}
-.top{background:var(--ink-hills) center bottom/cover no-repeat;
-  padding:calc(18px + env(safe-area-inset-top)) 20px 34px}
-.top h1{margin:0;font-size:30px;font-weight:600;letter-spacing:.35em;color:var(--sumi)}
-.top #sub{margin:2px 0 0;font-size:14px;letter-spacing:.2em;color:var(--sub)}
+.top{position:relative;height:230px;padding:0;overflow:hidden}
+.top::before{content:"";position:absolute;inset:0;background:var(--ink-hills) left bottom/cover no-repeat;
+  -webkit-mask-image:linear-gradient(to right,#000 35%,transparent 85%);mask-image:linear-gradient(to right,#000 35%,transparent 85%)}
+.top h1{position:absolute;right:24px;top:calc(16px + env(safe-area-inset-top));margin:0;
+  writing-mode:vertical-rl;font-size:30px;font-weight:700;letter-spacing:.12em;color:var(--sumi)}
+.top #sub{position:absolute;right:68px;top:calc(34px + env(safe-area-inset-top));margin:0;
+  writing-mode:vertical-rl;font-size:15px;letter-spacing:.12em;color:var(--sub)}
+.top .mark{position:absolute;right:66px;top:calc(188px + env(safe-area-inset-top));width:30px;height:30px;
+  display:grid;place-items:center;background:var(--shu);color:#f4efe3;font-size:13px;line-height:1;
+  font-weight:700;border-radius:3px;transform:rotate(3deg);box-shadow:inset 0 0 0 1.5px rgba(255,255,255,.35);
+  writing-mode:vertical-rl;letter-spacing:0}
 nav#tabs{position:sticky;top:0;z-index:5;display:flex;overflow-x:auto;scrollbar-width:none;
   background:var(--paper) var(--grain);border-bottom:1px solid var(--line);padding:0 8px}
 nav#tabs::-webkit-scrollbar{display:none}
@@ -29,8 +38,8 @@ nav#tabs::-webkit-scrollbar{display:none}
 #tabs button.on::after{content:"";position:absolute;left:50%;bottom:4px;width:7px;height:7px;
   margin-left:-3px;background:var(--shu);border-radius:50% 45% 55% 50%}
 main{padding:22px 20px 48px;max-width:640px;margin:0 auto}
-.day-h{margin:0 0 22px;padding-bottom:12px;border-bottom:1px solid var(--line)}
-.day-h h2{margin:0;font-size:25px;font-weight:600;letter-spacing:.08em}
+.day-h{margin:0 0 22px;padding-bottom:14px;background:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 400 8' preserveAspectRatio='none'%3E%3Cpath d='M0 4 Q40 1 110 3.6 T250 3.4 T400 4.4 Q300 6.4 200 5 T0 4Z' fill='%233a3935' opacity='.55'/%3E%3C/svg%3E") left bottom/100% 8px no-repeat}
+.day-h h2{margin:0;font-size:27px;font-weight:700;letter-spacing:.08em}
 .day-h .today{display:inline-block;margin-left:10px;vertical-align:middle;font-size:13px;
   color:#f4efe3;background:var(--shu);padding:0 7px;border-radius:2px;letter-spacing:.2em}
 /* 行程：細線時間軸 + 朱印 */
