@@ -14,7 +14,15 @@ window.TRIP = {
         { k: "move", transit: true, text: "搭利木津巴士到倉敷站北口", jp: "リムジンバス → 倉敷駅北口（くらしきえき きたぐち）", note: "約 35 分鐘，¥1,150，可刷 ICOCA / Suica。巴士班次請以機場當天公告為準。", map: "倉敷駅北口" },
         { k: "stay", text: "到飯店放行李", jp: "NAGI倉敷（なぎ くらしき）", note: "從倉敷站步行約 2 分鐘。入住 15:00–21:00，退房 11:00。還沒到入住時間也可以先寄放行李（9:00 起）。", url: "https://maps.app.goo.gl/8WZjf1Aa1LwgEMpy9" },
         { k: "see", text: "逛倉敷 outlet", jp: "三井アウトレットパーク倉敷（みつい アウトレットパーク くらしき）", map: "三井アウトレットパーク倉敷", links: [{ n: "樓層導覽 Floor Guide", u: "https://mitsui-shopping-park.com/mop/kurashiki/search/floor1f.html" }] },
-        { k: "eat", text: "晚餐：隨意吃", jp: "", note: "不用訂位，逛完直接在倉敷站或飯店附近找一家。", map: "倉敷駅 レストラン" }
+        { k: "see", text: "（可選）逛 AEON Mall 倉敷", jp: "イオンモール倉敷（いおんもーる くらしき）", note: "跟三井 outlet 二選一或都逛，看體力和時間。", url: "https://maps.google.com?q=Aeon%20Mall%20Kurashiki,%201%E7%95%AA%E5%9C%B0%20Mizue,%20Kurashiki,%20Okayama%20710-8560,%20Japan&ftid=0x355156fb06ab9a41:0xd5af4d941f17e7df" },
+        { k: "eat", text: "晚餐：隨意吃，或選下面其中一家", jp: "", note: "不用訂位，也可以逛完直接在倉敷站或飯店附近找一家。",
+          map: "倉敷駅 レストラン",
+          recs: [
+            { g: "吃", list: [
+              { n: "Bukkake-Udon Furuichi", d: "烏龍麵，在倉敷站附近", u: "https://maps.app.goo.gl/DBcD72uDRCX2Nbyc8" },
+              { n: "Okayama local cuisine TORAIYA", d: "岡山鄉土料理，在本町", u: "https://maps.app.goo.gl/3TbfURz2MdBjJmaNA" }
+            ] }
+          ] }
       ]
     },
     {
