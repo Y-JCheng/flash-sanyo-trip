@@ -3,8 +3,8 @@
   "short_name": "山陽之旅",
   "start_url": "./",
   "display": "standalone",
-  "background_color": "#ece6d8",
-  "theme_color": "#ece6d8",
+  "background_color": "#f1ebdc",
+  "theme_color": "#f1ebdc",
   "lang": "zh-Hant",
   "icons": [
     { "src": "icon.svg", "sizes": "any", "type": "image/svg+xml", "purpose": "any" },
