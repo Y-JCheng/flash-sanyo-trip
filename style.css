@@ -158,7 +158,7 @@ details.acc summary::-webkit-details-marker{display:none}
 /* 按鈕：雙線框（外粗內細，像和紙標籤），重要的「查班次」是朱印 */
 .item .go,.stay .go,.card .go,.pager button{position:relative;border:1px solid currentColor;border-radius:3px;background:var(--paper2)}
 .item .go::before,.stay .go::before,.card .go::before,.pager button::before{content:"";position:absolute;inset:2px;
-  border:1px solid currentColor;border-radius:1px;opacity:.7;pointer-events:none}
+  border:1px solid currentColor;border-radius:1px;opacity:.4;pointer-events:none}
 .item .go:active,.stay .go:active,.card .go:active,.pager button:active{transform:scale(.96);background:var(--paper2);color:inherit}
 .item .go:active{color:var(--c)}
 .pager button:active{color:var(--ink);background:var(--paper2)}
