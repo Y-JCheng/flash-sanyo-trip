@@ -1,5 +1,5 @@
 // 離線快取：先看網路最新版，沒網路時用快取
-var CACHE = "sanyo-v9";
+var CACHE = "sanyo-v10";
 var FILES = ["./", "index.html", "style.css", "app.js", "data.js", "icon.svg", "manifest.webmanifest"];
 
 self.addEventListener("install", function (e) {
