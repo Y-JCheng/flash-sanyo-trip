@@ -24,7 +24,26 @@ window.TRIP = {
       items: [
         { t: "8:50 到・9:00 開賣", k: "see", text: "到觀光案內所買川舟流船票，開賣前 10 分鐘（8:50）先去排隊", jp: "倉敷館観光案内所（くらしきかん かんこうあんないじょ）", note: "9:00 開始賣票。只賣當天票，先到先買，早買才不會滿。", map: "倉敷館観光案内所" },
         { t: "9:30–17:00", k: "see", text: "搭船遊倉敷川", jp: "くらしき川舟流し（くらしき かわふねながし）", note: "約 20 分鐘，¥700，每 30 分鐘一班", map: "くらしき川舟流し" },
-        { k: "see", text: "本町通、東町老街：帆布、雜貨、町家咖啡", jp: "本町通り（ほんまちどおり）・東町（ひがしまち）", map: "倉敷 本町通り" },
+        { k: "see", text: "本町通、東町老街：帆布、雜貨、町家咖啡", jp: "本町通り（ほんまちどおり）・東町（ひがしまち）", map: "倉敷 本町通り",
+          recs: [
+            { g: "吃", list: [
+              { n: "おむすびとくんせい", u: "https://maps.app.goo.gl/2Qc2iQrVtRhKh2wJA" },
+              { n: "Curry Bread Specialty Shop Shirakabe", d: "咖哩麵包和可樂餅", u: "https://maps.app.goo.gl/wLYsgov1nDj3viVKA" },
+              { n: "Yuurin-an Guesthouse & Cafe", d: "下午茶或午餐", u: "https://maps.app.goo.gl/cbWsZSbJwZ9wX8x96" },
+              { n: "Ivy West Gate", d: "冰淇淋", u: "https://maps.app.goo.gl/2XE13dPSNZx86RA7A" },
+              { n: "Irodori", d: "天婦羅", u: "https://maps.app.goo.gl/83oVFm8Wz3t5bEVN6" }
+            ] },
+            { g: "逛", list: [
+              { n: "Heart Made Base", d: "日式傳統工藝單寧", u: "https://maps.app.goo.gl/9aeHgBtmybgEirwe7" },
+              { n: "Hayashi Genjuro Shouten", d: "超好逛", u: "https://maps.app.goo.gl/kz4HjkCmfSQtc8s16" },
+              { n: "Morita Brewery", d: "酒造", u: "https://maps.app.goo.gl/rbnJ7bBPrQ1fDTco6" },
+              { n: "UramadO Kurashiki", d: "包包", u: "https://maps.app.goo.gl/FkeXj9a1NJav8upa6" },
+              { n: "Nyochiku-do", d: "紙膠帶", u: "https://maps.app.goo.gl/fMBv2GihN75bokGv7" }
+            ] },
+            { g: "參觀", list: [
+              { n: "Kurashiki Yoimachi Garden", d: "小竹林", u: "https://maps.app.goo.gl/zDV4HL1XtAJxUH2n7" }
+            ] }
+          ] },
         { k: "see", text: "倉敷常春藤廣場（紅磚老工廠）", jp: "倉敷アイビースクエア（くらしき アイビースクエア）", map: "倉敷アイビースクエア" },
         { k: "eat", text: "點心：橘香堂「むらすずめ」", jp: "橘香堂（きっこうどう）", map: "橘香堂 倉敷" },
         { k: "eat", text: "晚餐：Sawaraya（鰆魚料理），飯後散步看夜間點燈", jp: "鰆（さわら）料理", note: "記得訂位", url: "https://maps.app.goo.gl/pXb3qbkBSfRtVBzR7" }

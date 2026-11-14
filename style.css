@@ -106,3 +106,11 @@ details.acc summary::-webkit-details-marker{display:none}
 .prep-info .row>span{flex:none;width:4.2em;color:var(--kuri);font-weight:700;letter-spacing:.1em}
 .prep-info .row>div{flex:1;min-width:0}
 .item .go.app{color:#f4efe3;background:var(--c);margin-left:4px;letter-spacing:.08em}
+
+/* 推薦店家 */
+.rg h4{margin:12px 0 4px;font-size:16px;color:#f4efe3;background:var(--c);display:inline-block;padding:0 10px;border-radius:2px;letter-spacing:.3em;font-weight:700}
+.rg:first-child h4{margin-top:4px}
+.pl{display:flex;flex-wrap:wrap;align-items:center;gap:2px 12px;padding:8px 0;border-bottom:1px dotted var(--line)}
+.pl .pn{flex:1 1 100%;font-weight:700}
+.pl .pd{flex:1;color:var(--sub);font-size:16px}
+.item .go.sm{margin-top:0;font-size:15px;padding:4px 14px;min-height:36px}

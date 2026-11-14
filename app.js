@@ -54,6 +54,12 @@
         ((it.url || it.map) ? '<a class="go" target="_blank" rel="noopener" href="' + esc(it.url || mapUrl(it.map)) + '">開地圖</a>' : "") +
         (it.links || []).map(function (l) { return ' <a class="go" target="_blank" rel="noopener" href="' + esc(l.u) + '">' + esc(l.n) + "</a>"; }).join("") +
         (it.transit ? ' <a class="go app" target="_blank" rel="noopener" href="' + esc(T.transitApp) + '">查班次（交通 App）</a>' : "") +
+        (it.recs ? '<details class="acc"><summary>推薦店家（吃・逛・參觀）</summary><div class="acc-b">' + it.recs.map(function (g) {
+          return '<div class="rg"><h4>' + esc(g.g) + "</h4>" + g.list.map(function (r) {
+            return '<div class="pl"><div class="pn">' + esc(r.n) + "</div>" + '<div class="pd">' + esc(r.d || "") + "</div>" +
+              '<a class="go sm" target="_blank" rel="noopener" href="' + esc(r.u) + '">開地圖</a></div>';
+          }).join("") + "</div>";
+        }).join("") + "</div></details>" : "") +
         (it.note ? '<details class="acc"><summary>注意事項</summary><div class="acc-b">' + esc(it.note) + "</div></details>" : "") +
         "</div></div>";
     }).join("");
