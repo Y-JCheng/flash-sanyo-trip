@@ -56,6 +56,8 @@
     if (d.stay) {
       h += '<div class="stay"><b>宿　今晚住：' + esc(d.stay.name) + "</b>" +
         (d.stay.jp ? '<div class="jp">' + esc(d.stay.jp) + "</div>" : "") +
+        (d.stay.addr ? "<div>" + esc(d.stay.addr) + "</div>" : "") +
+        (d.stay.tel ? '<div>電話：<a href="tel:+81' + esc(d.stay.tel.replace(/^0/, "").replace(/-/g, "")) + '">' + esc(d.stay.tel) + "</a></div>" : "") +
         (d.stay.note ? "<div>" + esc(d.stay.note) + "</div>" : "") +
         (d.stay.url ? '<a class="go" target="_blank" rel="noopener" href="' + esc(d.stay.url) + '">開地圖</a>' : "") + "</div>";
     }
