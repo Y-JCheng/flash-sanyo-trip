@@ -57,7 +57,18 @@ window.TRIP = {
         { k: "stay", text: "到飯店寄放行李", jp: "福山（ふくやま）", note: "飯店尚未填寫；訂好後會補上地址、入住時間和電話。大行李先放飯店，出門只帶隨身包。" },
         { k: "move", transit: true, text: "福山搭 JR 到尾道（約 20 分）", jp: "福山駅（ふくやまえき）→ 尾道駅（おのみちえき）", map: "尾道駅" },
         { k: "eat", text: "午餐：尾道拉麵 Onomichi Ramen Kuukai", jp: "尾道ラーメン（おのみち ラーメン）", note: "可以邊看海邊吃。推薦大家共點一份炒飯。", url: "https://maps.app.goo.gl/pHHmYL4QujtAEuY7A" },
-        { k: "see", text: "搭纜車上千光寺公園看海景，再沿坡道慢慢走下來", jp: "千光寺（せんこうじ）公園", map: "千光寺公園" },
+        { k: "see", text: "搭纜車上千光寺公園看海景，再沿坡道慢慢走下來", jp: "千光寺（せんこうじ）公園", map: "千光寺公園",
+          recs: [
+            { g: "吃", list: [
+              { n: "Petit Anon", d: "和式義大利麵", u: "https://maps.app.goo.gl/f4nAMH4RzuSY9rjS8" },
+              { n: "Nekonotepan factory", d: "迷你麵包專賣", u: "https://maps.app.goo.gl/S58jVTyF3LuAUCHaA" },
+              { n: "Hanutei", d: "老屋甜點", u: "https://maps.app.goo.gl/8Uay9e1SYgFNKxyQ9" }
+            ] },
+            { g: "喝", list: [
+              { n: "Atmosphere", d: "荒廢公寓改建的流行咖啡廳", u: "https://maps.app.goo.gl/cpEbgXw99jvAVxE86" },
+              { n: "Tea Stand Yamate (Tea Factory Gen)", d: "日式茶館", u: "https://maps.app.goo.gl/kB4xtuJhbhz3Noy59" }
+            ] }
+          ] },
         { k: "see", text: "尾道本通商店街、海邊步道", jp: "尾道本通り商店街（おのみち ほんどおり しょうてんがい）", map: "尾道本通り商店街",
           recs: [
             { g: "吃", list: [
