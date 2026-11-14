@@ -167,6 +167,10 @@ window.TRIP = {
   prep: {
     title: "入境手續：Visit Japan Web",
     intro: "出發前先在網路上填好「入國審查」和「海關申報」，到日本機場出示 QR Code 就能快速通關。每個人都要用自己的護照各填一份。表格都要用英文（半角英文字母和數字）填寫，姓名照護照上的拼音。",
+    who: [
+      { n: "惠予", p: "自己填。她的離境日是 11/19，比大家早回國。" },
+      { n: "媽媽、阿姨們", p: "大家聚在一起，一個一個填，有問題可以互相幫忙。" }
+    ],
     link: "https://services.digital.go.jp/zh-cmn-hant/visit-japan-web/",
     linkText: "開啟 Visit Japan Web",
     steps: [
@@ -180,7 +184,7 @@ window.TRIP = {
     info: [
       { k: "入境日", v: "Nov 15, 2026（11/15 日）" },
       { k: "入境地", v: "Okayama Airport（岡山機場）" },
-      { k: "離境日", v: "Nov 21, 2026（11/21 六）" },
+      { k: "離境日", v: "Nov 21, 2026（11/21 六）；惠予是 Nov 19, 2026" },
       { k: "停留", v: "6 nights（6 晚）" },
       { k: "航班", v: "照機票上的班機編號（英文字母＋數字）" },
       { k: "住宿名", v: "NAGI Kurashiki" },

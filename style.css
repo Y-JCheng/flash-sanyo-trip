@@ -114,3 +114,8 @@ details.acc summary::-webkit-details-marker{display:none}
 .pl .pn{flex:1 1 100%;font-weight:700}
 .pl .pd{flex:1;color:var(--sub);font-size:16px}
 .item .go.sm{margin-top:0;font-size:15px;padding:4px 14px;min-height:36px}
+.who{margin:0 0 14px;border-top:3px double var(--kuri);background:var(--paper2);padding:4px 14px}
+.who .w{display:flex;gap:14px;padding:8px 0;border-bottom:1px dotted var(--line)}
+.who .w:last-child{border-bottom:0}
+.who b{flex:none;width:5.2em;color:var(--kuri);letter-spacing:.05em}
+.who span{flex:1;min-width:0}

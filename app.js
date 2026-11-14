@@ -91,6 +91,9 @@
   function renderPrep() {
     var P = T.prep, done = store("prep") || {};
     return '<h2 class="sec">' + esc(P.title) + '</h2><p class="lead">' + esc(P.intro) + "</p>" +
+      '<div class="who">' + (P.who || []).map(function (w) {
+        return '<div class="w"><b>' + esc(w.n) + "</b><span>" + esc(w.p) + "</span></div>";
+      }).join("") + "</div>" +
       '<a class="go prep-go" target="_blank" rel="noopener" href="' + esc(P.link) + '">' + esc(P.linkText) + "</a>" +
       '<h2 class="sec">步驟</h2>' + P.steps.map(function (x, i) {
         return '<label class="todo"><input type="checkbox" data-k="prep" data-i="' + i + '"' + (done[i] ? " checked" : "") +
