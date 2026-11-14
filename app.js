@@ -52,6 +52,7 @@
         '<div class="tx">' + esc(it.text) + "</div>" +
         (it.jp ? '<div class="jp">' + esc(it.jp) + "</div>" : "") +
         ((it.url || it.map) ? '<a class="go" target="_blank" rel="noopener" href="' + esc(it.url || mapUrl(it.map)) + '">開地圖</a>' : "") +
+        (it.transit ? ' <a class="go app" target="_blank" rel="noopener" href="' + esc(T.transitApp) + '">查班次（交通 App）</a>' : "") +
         (it.note ? '<details class="acc"><summary>注意事項</summary><div class="acc-b">' + esc(it.note) + "</div></details>" : "") +
         "</div></div>";
     }).join("");
