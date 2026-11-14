@@ -149,3 +149,8 @@ details.acc summary::-webkit-details-marker{display:none}
   #fall svg{fill:#e0603a}
 }
 @media (prefers-reduced-motion:reduce){#fall{display:none}}
+
+/* 夜間：淡色底上的字改深色，對比才夠（要放在檔案最後才蓋得過前面的白字） */
+@media (prefers-color-scheme:dark){
+  .item .seal,.rg h4,.item .go.app{color:#10182a}
+}
