@@ -6,7 +6,7 @@ window.TRIP = {
   sub: "岡山・倉敷・尾道",
   days: [
     {
-      id: "d1", date: "2026-11-15", label: "11/15", dow: "日",
+      id: "d1", season: { n: "地始凍", k: "ちはじめてこおる" }, date: "2026-11-15", label: "11/15", dow: "日",
       title: "抵達岡山・倉敷",
       stay: { name: "NAGI 倉敷", jp: "NAGI倉敷（なぎ くらしき）", addr: "〒710-0055 岡山県倉敷市阿知1-14-3", tel: "080-5913-9349", checkin: "15:00–21:00", checkout: "11:00", note: "從倉敷站步行約 2 分鐘；9:00 起可寄放行李", url: "https://maps.app.goo.gl/8WZjf1Aa1LwgEMpy9" },
       items: [
@@ -27,7 +27,7 @@ window.TRIP = {
       ]
     },
     {
-      id: "d2", date: "2026-11-16", label: "11/16", dow: "一",
+      id: "d2", season: { n: "地始凍", k: "ちはじめてこおる" }, date: "2026-11-16", label: "11/16", dow: "一",
       title: "倉敷一日",
       stay: { name: "NAGI 倉敷", jp: "NAGI倉敷（なぎ くらしき）", addr: "〒710-0055 岡山県倉敷市阿知1-14-3", tel: "080-5913-9349", checkin: "15:00–21:00", checkout: "11:00", note: "從倉敷站步行約 2 分鐘；9:00 起可寄放行李", url: "https://maps.app.goo.gl/8WZjf1Aa1LwgEMpy9" },
       items: [
@@ -66,7 +66,7 @@ window.TRIP = {
       ]
     },
     {
-      id: "d3", date: "2026-11-17", label: "11/17", dow: "二",
+      id: "d3", season: { n: "金盞香", k: "きんせんかさく" }, date: "2026-11-17", label: "11/17", dow: "二",
       title: "尾道市區",
       stay: { name: "Vessel Inn 福山站前", jp: "ベッセルイン福山駅前（ふくやまえきまえ）", addr: "〒720-0061 広島県福山市丸之内1-2-1", note: "就在福山站旁；入住、退房時間和電話還沒查到，請看訂房確認信。福山到尾道搭 JR 約 20 分鐘。", url: "https://maps.app.goo.gl/r5q5sRht3252f2et7" },
       items: [
@@ -107,7 +107,7 @@ window.TRIP = {
       ]
     },
     {
-      id: "d4", date: "2026-11-18", label: "11/18", dow: "三",
+      id: "d4", season: { n: "金盞香", k: "きんせんかさく" }, date: "2026-11-18", label: "11/18", dow: "三",
       title: "生口島一日遊",
       stay: { name: "Vessel Inn 福山站前", jp: "ベッセルイン福山駅前（ふくやまえきまえ）", addr: "〒720-0061 広島県福山市丸之内1-2-1", note: "就在福山站旁；入住、退房時間和電話還沒查到，請看訂房確認信。尾道回福山搭 JR 約 20 分鐘。", url: "https://maps.app.goo.gl/r5q5sRht3252f2et7" },
       items: [
@@ -134,7 +134,7 @@ window.TRIP = {
       ]
     },
     {
-      id: "d5", date: "2026-11-19", label: "11/19", dow: "四",
+      id: "d5", season: { n: "金盞香", k: "きんせんかさく" }, date: "2026-11-19", label: "11/19", dow: "四",
       title: "惠予回國・鞆之浦",
       stay: { name: "鷗風亭", jp: "ホテル鷗風亭（鞆の浦）", addr: "〒720-0201 広島県福山市鞆町鞆136番地", tel: "084-982-1123", note: "入住、退房時間尚未查到，請向旅館確認" },
       items: [
@@ -147,7 +147,7 @@ window.TRIP = {
       ]
     },
     {
-      id: "d6", date: "2026-11-20", label: "11/20", dow: "五",
+      id: "d6", season: { n: "金盞香", k: "きんせんかさく" }, date: "2026-11-20", label: "11/20", dow: "五",
       title: "鞆之浦 → 岡山",
       stay: { name: "Airbnb（Ray Okayama）", jp: "奉還町（ほうかんちょう）Ray Okayama", addr: "〒700-0026 岡山県岡山市北区奉還町4-8-4 Ray Okayama", note: "Airbnb 的入住方式、時間和房東聯絡方式請看訂房訊息；抵達前先確認。", url: "https://maps.app.goo.gl/ohg2GcEE2YfRxL4m7" },
       items: [
@@ -176,7 +176,7 @@ window.TRIP = {
       ]
     },
     {
-      id: "d7", date: "2026-11-21", label: "11/21", dow: "六",
+      id: "d7", season: { n: "金盞香", k: "きんせんかさく" }, date: "2026-11-21", label: "11/21", dow: "六",
       title: "回國",
       stay: null,
       items: [

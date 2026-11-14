@@ -45,7 +45,8 @@
 
   function renderDay(d) {
     var h = '<div class="day-h"><h2>' + esc(d.label) + "（" + esc(d.dow) + "）" + esc(d.title) +
-      (d.date === t ? '<span class="today">今天</span>' : "") + "</h2></div>";
+      (d.date === t ? '<span class="today">今天</span>' : "") + "</h2>" +
+      (d.season ? '<div class="season">七十二候　' + esc(d.season.n) + "（" + esc(d.season.k) + "）</div>" : "") + "</div>";
     h += d.items.map(function (it) {
       return '<div class="item k-' + it.k + '"><div class="seal">' + ICON[it.k] + '</div><div class="bd">' +
         (it.t ? '<div class="t">' + esc(it.t) + "</div>" : "") +
@@ -70,7 +71,7 @@
         (st.checkout ? row("退房", esc(st.checkout)) : "") +
         (st.tel ? row("電話", '<a class="tel" href="tel:+81' + esc(st.tel.replace(/^0/, "").replace(/-/g, "")) + '">' + esc(st.tel) + "</a>") : "") +
         (st.note ? row("備註", esc(st.note)) : "");
-      h += '<details class="stay acc"><summary><b>宿　今晚住：' + esc(st.name) + "</b>" +
+      h += '<details class="stay acc"><summary><span class="tag">今晚住</span><b>' + esc(st.name) + "</b>" +
         (st.jp ? '<div class="jp">' + esc(st.jp) + "</div>" : "") + "</summary>" +
         (body ? '<div class="acc-b">' + body + "</div>" : "") + "</details>";
     }
@@ -119,6 +120,9 @@
     else if (current === "prep") v.innerHTML = renderPrep();
     else if (current === "todo") v.innerHTML = renderTodo();
     else v.innerHTML = renderDay(T.days.filter(function (d) { return d.id === current; })[0]);
+    v.classList.remove("enter");
+    void v.offsetWidth;
+    v.classList.add("enter");
     window.scrollTo(0, 0);
   }
 

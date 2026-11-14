@@ -170,3 +170,33 @@ details.acc summary::-webkit-details-marker{display:none}
   .item .go.app{color:#fff3de}
   .item .go,.stay .go,.card .go,.pager button{box-shadow:0 0 10px rgba(240,169,90,.10)}
 }
+
+/* 節氣（七十二候） */
+.day-h .season{margin-top:6px;font-size:15px;letter-spacing:.14em;color:var(--sub)}
+
+/* 今晚住：只留四個角的括弧，左邊直排題簽 */
+details.stay{border:0;padding:20px 22px 18px 46px;background-color:var(--paper2);
+  background-image:
+    linear-gradient(var(--kuri),var(--kuri)),linear-gradient(var(--kuri),var(--kuri)),
+    linear-gradient(var(--kuri),var(--kuri)),linear-gradient(var(--kuri),var(--kuri)),
+    linear-gradient(var(--kuri),var(--kuri)),linear-gradient(var(--kuri),var(--kuri)),
+    linear-gradient(var(--kuri),var(--kuri)),linear-gradient(var(--kuri),var(--kuri));
+  background-size:18px 1.5px,1.5px 18px,18px 1.5px,1.5px 18px,18px 1.5px,1.5px 18px,18px 1.5px,1.5px 18px;
+  background-position:0 0,0 0,100% 0,100% 0,0 100%,0 100%,100% 100%,100% 100%;
+  background-repeat:no-repeat}
+details.stay summary{padding-right:30px}
+details.stay summary::after{right:0;top:0}
+details.stay .tag{position:absolute;left:13px;top:20px;writing-mode:vertical-rl;font-size:15px;line-height:1.2;
+  letter-spacing:.35em;color:var(--kuri);font-weight:700;padding-right:6px;border-right:1px solid var(--kuri)}
+details.stay summary b{display:block}
+
+/* 落款 */
+#colophon{max-width:640px;margin:0 auto;padding:6px 24px 44px;display:flex;justify-content:flex-end;align-items:center;gap:10px;
+  color:var(--sub);font-size:14px;letter-spacing:.3em}
+#colophon i{font-style:normal;display:grid;place-items:center;width:28px;height:28px;background:var(--shu);color:#fbf3e4;
+  font-size:11px;line-height:1;font-weight:700;border-radius:2px;transform:rotate(3deg);writing-mode:vertical-rl;letter-spacing:0}
+
+/* 換頁：像紙拉門輕輕滑入 */
+#view.enter{animation:slidein .34s ease-out}
+@keyframes slidein{from{opacity:0;transform:translateX(16px)}to{opacity:1;transform:none}}
+@media (prefers-reduced-motion:reduce){#view.enter{animation:none}}
