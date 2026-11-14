@@ -91,6 +91,7 @@ window.TRIP = {
     }
   ],
   tips: [
+    { h: "交通怎麼查", p: "搭電車、新幹線、巴士：用「Japan Travel by NAVITIME」查，輸入出發站和目的地，就會列出班次、時間、月台和票價。走路：用 Google 地圖，每個行程的「開地圖」按鈕可以直接導航。", u: "https://apps.apple.com/tw/app/japan-travel-visit-planner/id686373726?l=en-GB", ul: "下載交通 App（iPhone）" },
     { h: "行李", p: "尾道坡道多、去生口島要搭船，大行李先放尾道飯店，出門只帶隨身包。也可以用宅急便把大行李直接寄到下一間飯店。" },
     { h: "交通卡", p: "ICOCA 或 Suica 可以搭巴士和 JR，先儲值好比較方便。" },
     { h: "國際線", p: "建議起飛前 2 小時到機場。" },

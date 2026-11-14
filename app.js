@@ -72,7 +72,7 @@
 
   function renderTips() {
     return '<h2 class="sec">實用提醒</h2>' + T.tips.map(function (x) {
-      return '<div class="card"><h3>' + esc(x.h) + "</h3><p>" + esc(x.p) + "</p></div>";
+      return '<div class="card"><h3>' + esc(x.h) + "</h3><p>" + esc(x.p) + "</p>" + (x.u ? '<a class="go" target="_blank" rel="noopener" href="' + esc(x.u) + '">' + esc(x.ul || "開啟") + "</a>" : "") + "</div>";
     }).join("") + '<h2 class="sec">參考連結</h2>' + T.links.map(function (l) {
       return '<a class="lnk" target="_blank" rel="noopener" href="' + esc(l.u) + '">' + esc(l.n) + "</a>";
     }).join("");
