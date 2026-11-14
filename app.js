@@ -1,6 +1,6 @@
 (function () {
   var T = window.TRIP;
-  var ICON = { move: "🚆", eat: "🍴", see: "📍", stay: "🏨" };
+  var ICON = { move: "行", eat: "食", see: "遊", stay: "宿" };
   var $ = function (s) { return document.querySelector(s); };
   var DOW = ["日", "一", "二", "三", "四", "五", "六"];
 
@@ -45,7 +45,7 @@
     var h = '<div class="day-h"><h2>' + esc(d.label) + "（" + esc(d.dow) + "）" + esc(d.title) +
       (d.date === t ? '<span class="today">今天</span>' : "") + "</h2></div>";
     h += d.items.map(function (it) {
-      return '<div class="item k-' + it.k + '"><div class="ic">' + ICON[it.k] + '</div><div class="bd">' +
+      return '<div class="item k-' + it.k + '"><div class="seal">' + ICON[it.k] + '</div><div class="bd">' +
         (it.t ? '<div class="t">' + esc(it.t) + "</div>" : "") +
         '<div class="tx">' + esc(it.text) + "</div>" +
         (it.jp ? '<div class="jp">' + esc(it.jp) + "</div>" : "") +
@@ -54,7 +54,7 @@
         "</div></div>";
     }).join("");
     if (d.stay) {
-      h += '<div class="stay"><b>🏨 今晚住：' + esc(d.stay.name) + "</b>" +
+      h += '<div class="stay"><b>宿　今晚住：' + esc(d.stay.name) + "</b>" +
         (d.stay.jp ? '<div class="jp">' + esc(d.stay.jp) + "</div>" : "") +
         (d.stay.note ? "<div>" + esc(d.stay.note) + "</div>" : "") + "</div>";
     }
