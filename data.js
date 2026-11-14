@@ -58,7 +58,24 @@ window.TRIP = {
         { k: "move", transit: true, text: "福山搭 JR 到尾道（約 20 分）", jp: "福山駅（ふくやまえき）→ 尾道駅（おのみちえき）", map: "尾道駅" },
         { k: "eat", text: "午餐：尾道拉麵 Onomichi Ramen Kuukai", jp: "尾道ラーメン（おのみち ラーメン）", note: "可以邊看海邊吃。推薦大家共點一份炒飯。", url: "https://maps.app.goo.gl/pHHmYL4QujtAEuY7A" },
         { k: "see", text: "搭纜車上千光寺公園看海景，再沿坡道慢慢走下來", jp: "千光寺（せんこうじ）公園", map: "千光寺公園" },
-        { k: "see", text: "尾道本通商店街、海邊步道", jp: "尾道本通り商店街（おのみち ほんどおり しょうてんがい）", map: "尾道本通り商店街" }
+        { k: "see", text: "尾道本通商店街、海邊步道", jp: "尾道本通り商店街（おのみち ほんどおり しょうてんがい）", map: "尾道本通り商店街",
+          recs: [
+            { g: "吃", list: [
+              { n: "Five", d: "餐廳", u: "https://maps.app.goo.gl/TbhFrEd9oWy1hcgt6" },
+              { n: "Takahara Seikichi diner", d: "餐廳", u: "https://maps.app.goo.gl/zPLD97Y7KJBLu1na6" },
+              { n: "Koro Bakery", d: "麵包店", u: "https://maps.app.goo.gl/BUMivwGyg8HCRmng6" },
+              { n: "Oyatsu-to-Yamaneko", d: "尾道布丁", u: "https://maps.app.goo.gl/BGihGvvSS5VHHCq58" },
+              { n: "Karasawa Ice Cream", d: "冰淇淋最中", u: "https://maps.app.goo.gl/hJECQAJ6MNzV8Z2dA" }
+            ] },
+            { g: "喝", list: [
+              { n: "Mexico", d: "昭和咖啡", u: "https://maps.app.goo.gl/8aXyfk1tNsuyzZGa6" },
+              { n: "POUR specialty coffee", d: "外帶咖啡", u: "https://maps.app.goo.gl/FLdHpMc2waoCqZH36" }
+            ] },
+            { g: "逛", list: [
+              { n: "Keima Kamaboko store", d: "特產魚板店", u: "https://maps.app.goo.gl/TA1qHYayc1Z2tfg18" },
+              { n: "Onomichi Guest House Anago-no-Nedoko", d: "地圖是這家旅館；旁邊的小巷子走進去到底，有一間很可愛的小書店", u: "https://maps.app.goo.gl/bEccnZ8UqJDVm55L6" }
+            ] }
+          ] }
       ]
     },
     {
