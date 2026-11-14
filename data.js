@@ -34,8 +34,8 @@ window.TRIP = {
           map: "倉敷 カフェ",
           recs: [
             { g: "吃", list: [
-              { n: "Cafe Gewa", d: "在倉敷站附近（阿知 2-23-10）", u: "https://maps.app.goo.gl/UUpP5hhbKaY1HeoV6" },
-              { n: "cafe BISCUIT", d: "在本町（5-27）", u: "https://maps.app.goo.gl/3ZLZhNgRu6FftYnd9" }
+              { n: "Cafe Gewa", d: "在美觀地區，很近", u: "https://maps.app.goo.gl/UUpP5hhbKaY1HeoV6" },
+              { n: "cafe BISCUIT", d: "在美觀地區，很近", u: "https://maps.app.goo.gl/3ZLZhNgRu6FftYnd9" }
             ] }
           ] },
         { t: "8:50 到・9:00 開賣", k: "see", text: "到觀光案內所買川舟流船票，開賣前 10 分鐘（8:50）先去排隊", jp: "倉敷館観光案内所（くらしきかん かんこうあんないじょ）", note: "9:00 開始賣票。只賣當天票，先到先買，早買才不會滿。", map: "倉敷館観光案内所" },
