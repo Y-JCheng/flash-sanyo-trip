@@ -16,7 +16,6 @@ window.TRIP = {
         { k: "see", text: "逛倉敷 outlet", jp: "三井アウトレットパーク倉敷（みつい アウトレットパーク くらしき）", map: "三井アウトレットパーク倉敷", links: [{ n: "樓層導覽", u: "https://mitsui-shopping-park.com/mop/kurashiki/search/floor1f.html" }] },
         { k: "see", text: "（可選）逛 AEON Mall 倉敷", jp: "イオンモール倉敷（いおんもーる くらしき）", note: "跟三井 outlet 二選一或都逛，看體力和時間。", url: "https://maps.google.com?q=Aeon%20Mall%20Kurashiki,%201%E7%95%AA%E5%9C%B0%20Mizue,%20Kurashiki,%20Okayama%20710-8560,%20Japan&ftid=0x355156fb06ab9a41:0xd5af4d941f17e7df" },
         { k: "eat", text: "晚餐：隨意吃，或選下面其中一家", jp: "",
-          map: "倉敷駅 レストラン",
           recs: [
             { g: "吃", list: [
               { n: "Bukkake-Udon Furuichi", d: "烏龍麵，在倉敷站附近", u: "https://maps.app.goo.gl/DBcD72uDRCX2Nbyc8" },
@@ -31,7 +30,7 @@ window.TRIP = {
       title: "倉敷一日",
       stay: { name: "NAGI 倉敷", jp: "NAGI倉敷（なぎ くらしき）", addr: "〒710-0055 岡山県倉敷市阿知1-14-3", tel: "080-5913-9349", checkin: "15:00–21:00", checkout: "11:00", note: "從倉敷站步行約 2 分鐘；9:00 起可寄放行李", url: "https://maps.app.goo.gl/8WZjf1Aa1LwgEMpy9" },
       items: [
-        { t: "早上", k: "eat", text: "早餐：選下面其中一家", note: "8:50 要到觀光案內所排隊買船票，早餐不要拖太晚。營業時間我還沒查，出發前請在地圖確認。",
+        { t: "早上", k: "eat", text: "早餐：選下面其中一家", note: "8:50 要到觀光案內所排隊買船票，早餐不要拖太晚。",
           recs: [
             { g: "吃", list: [
               { n: "Cafe Gewa", d: "在美觀地區，很近", u: "https://maps.app.goo.gl/UUpP5hhbKaY1HeoV6" },
