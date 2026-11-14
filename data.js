@@ -133,7 +133,7 @@ window.TRIP = {
       title: "鞆之浦 → 岡山",
       stay: { name: "岡山站附近", jp: "岡山駅（おかやまえき）", note: "住宿尚未填寫" },
       items: [
-        { k: "see", text: "早上慢慢逛鞆之浦：海港老街、常夜燈、福禪寺看海景", jp: "常夜燈（じょうやとう）／福禅寺（ふくぜんじ）", note: "早上人少又安靜", map: "福禅寺 対潮楼",
+        { k: "see", text: "早上慢慢逛鞆之浦：海港老街、常夜燈、福禪寺看海景", jp: "常夜燈（じょうやとう）／福禅寺（ふくぜんじ）", map: "福禅寺 対潮楼",
           recs: [
             { g: "吃", list: [
               { n: "Sabo Funabansho", d: "咖啡或定食", u: "https://maps.app.goo.gl/h47MZSAytREHLC9z8" }
