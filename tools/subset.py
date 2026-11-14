@@ -12,7 +12,7 @@ for f in ("data.js", "app.js", "index.html"):
     chars |= set(open(os.path.join(root, f), encoding="utf-8").read())
 # 基本字：ASCII、常用標點、箭頭、方框與標記
 chars |= set(chr(c) for c in range(0x20, 0x7F))
-chars |= set("，。、；：！？「」『』（）〔〕【】—－～・·…→←↑↓＋－　〒☐✓行食遊宿快閃山陽之旅")
+chars |= set("，。、；：！？「」『』（）〔〕【】—－～・·…→←↑↓＋－　〒☐✓行食遊宿山陽紅葉帖")
 text = "".join(sorted(chars))
 
 os.makedirs(os.path.join(root, "fonts"), exist_ok=True)

@@ -2,7 +2,7 @@
 // k（類型）: move 交通 / eat 吃 / see 玩 / stay 住宿
 // jp: 日文與假名；map: Google 地圖搜尋字
 window.TRIP = {
-  title: "快閃山陽之旅",
+  title: "山陽紅葉帖",
   sub: "岡山・倉敷・尾道",
   days: [
     {
