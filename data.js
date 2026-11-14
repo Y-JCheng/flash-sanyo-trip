@@ -60,7 +60,7 @@ window.TRIP = {
               { n: "Kurashiki Yoimachi Garden", d: "小竹林", u: "https://maps.app.goo.gl/zDV4HL1XtAJxUH2n7" }
             ] }
           ] },
-        { k: "eat", text: "晚餐：Sawaraya（鰆魚料理），飯後散步看夜間點燈", jp: "鰆（さわら）料理", note: "記得訂位", url: "https://maps.app.goo.gl/pXb3qbkBSfRtVBzR7" }
+        { t: "17:00", k: "eat", text: "晚餐：Sawaraya（鰆魚料理），飯後散步看夜間點燈", jp: "鰆（さわら）料理", note: "已訂位，17:00 入座。", url: "https://maps.app.goo.gl/pXb3qbkBSfRtVBzR7" }
       ]
     },
     {
