@@ -130,22 +130,22 @@ details.acc summary::-webkit-details-marker{display:none}
 .who b{flex:none;width:5.2em;color:var(--kuri);letter-spacing:.05em}
 .who span{flex:1;min-width:0}
 
-/* 背景飄落的楓葉、橘子、檸檬 */
+/* 背景飄落的楓葉：外層直直慢慢落下，內層左右擺盪（之字形），邊緣模糊 */
 #fall{position:fixed;inset:0;z-index:0;pointer-events:none;overflow:hidden;opacity:.11}
 #fall i{position:absolute;top:-60px;display:block;will-change:transform;
   animation:fall linear infinite}
-#fall svg{width:100%;height:100%;display:block;fill:currentColor}
-#fall .maple{color:#b8392b}
-#fall .orange{color:#d9822b}
-#fall .lemon{color:#c9a800}
+#fall svg{width:100%;height:100%;display:block;fill:#b8392b;filter:blur(1.6px);
+  animation:zig var(--sw,7s) cubic-bezier(.45,.05,.55,.95) infinite alternate}
 @keyframes fall{
-  0%{transform:translate3d(0,-8vh,0) rotate(0deg)}
-  50%{transform:translate3d(var(--dx),55vh,0) rotate(180deg)}
-  100%{transform:translate3d(0,112vh,0) rotate(360deg)}
+  from{transform:translate3d(0,-8vh,0)}
+  to{transform:translate3d(0,112vh,0)}
+}
+@keyframes zig{
+  from{transform:translateX(calc(var(--dx) * -1)) rotate(-28deg)}
+  to{transform:translateX(var(--dx)) rotate(28deg)}
 }
 @media (prefers-color-scheme:dark){
   #fall{opacity:.13}
-  #fall .maple{color:#e0603a}
-  #fall .lemon{color:#f0d25a}
+  #fall svg{fill:#e0603a}
 }
 @media (prefers-reduced-motion:reduce){#fall{display:none}}

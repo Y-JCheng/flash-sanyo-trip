@@ -152,28 +152,24 @@
   }
 })();
 
-// 背景：很淡的楓葉、橘子、檸檬慢慢飄落（純裝飾；系統設定「減少動態效果」時不顯示）
+// 背景：很淡的楓葉慢慢飄落，左右擺盪成之字形（純裝飾；系統設定「減少動態效果」時不顯示）
 (function () {
   try {
     if (window.matchMedia && matchMedia("(prefers-reduced-motion: reduce)").matches) return;
   } catch (e) {}
-  var S = {
-    maple: '<svg viewBox="0 0 24 24"><path d="M12 1.5l1.9 5 3.6-2-.9 5.2 5.1-1.6-3.3 4.1 2.6 2.7-5.4-.2-.8 2.7-2.6-1.2L12 22l-.2-4.8-2.6 1.2-.8-2.7-5.4.2 2.6-2.7-3.3-4.1 5.1 1.6-.9-5.2 3.6 2z"/></svg>',
-    orange: '<svg viewBox="0 0 24 24"><circle cx="12" cy="13.5" r="8.5"/><path d="M12 5c0-2 1.2-3 3.2-3.2-.2 2-1.2 3.2-3.2 3.2z"/></svg>',
-    lemon: '<svg viewBox="0 0 24 24"><path d="M1.8 12c0-.9.7-1.5 1.5-1.5C4.4 6.6 8 4.8 12 4.8s7.6 1.8 8.7 5.7c.8 0 1.5.6 1.5 1.5s-.7 1.5-1.5 1.5c-1.1 3.9-4.7 5.7-8.7 5.7s-7.6-1.8-8.7-5.7c-.8 0-1.5-.6-1.5-1.5z"/></svg>'
-  };
-  // 種類、左邊位置(%)、大小(px)、下落秒數、延遲(負值=一開始就散在畫面上)、左右飄移(vw)
+  var LEAF = '<svg viewBox="0 0 24 24"><path d="M12 1.5l1.9 5 3.6-2-.9 5.2 5.1-1.6-3.3 4.1 2.6 2.7-5.4-.2-.8 2.7-2.6-1.2L12 22l-.2-4.8-2.6 1.2-.8-2.7-5.4.2 2.6-2.7-3.3-4.1 5.1 1.6-.9-5.2 3.6 2z"/></svg>';
+  // 左邊位置(%)、大小(px)、下落秒數、延遲(負值=一開始就散在畫面上)、左右擺幅(px)、擺一趟秒數
   var P = [
-    ["maple", 6, 30, 34, -4, 6], ["lemon", 18, 26, 42, -20, -5], ["orange", 30, 30, 38, -11, 4],
-    ["maple", 42, 24, 30, -26, -7], ["maple", 55, 34, 40, -8, 5], ["orange", 66, 24, 33, -17, -4],
-    ["lemon", 77, 30, 44, -30, 6], ["maple", 88, 26, 36, -2, -6], ["orange", 94, 28, 41, -23, 3]
+    [8, 30, 85, -10, 46, 6.5], [22, 24, 100, -62, 38, 7.5], [38, 34, 92, -35, 56, 8],
+    [52, 26, 108, -80, 42, 6], [66, 32, 88, -22, 50, 7], [80, 24, 96, -50, 36, 8.5],
+    [92, 28, 104, -72, 44, 6.8]
   ];
   var box = document.createElement("div");
   box.id = "fall";
   box.setAttribute("aria-hidden", "true");
   box.innerHTML = P.map(function (a) {
-    return '<i class="' + a[0] + '" style="left:' + a[1] + "%;width:" + a[2] + "px;height:" + a[2] +
-      "px;animation-duration:" + a[3] + "s;animation-delay:" + a[4] + "s;--dx:" + a[5] + 'vw">' + S[a[0]] + "</i>";
+    return '<i style="left:' + a[0] + "%;width:" + a[1] + "px;height:" + a[1] + "px;animation-duration:" + a[2] +
+      "s;animation-delay:" + a[3] + "s;--dx:" + a[4] + "px;--sw:" + a[5] + 's">' + LEAF + "</i>";
   }).join("");
   document.body.insertBefore(box, document.body.firstChild);
 })();
