@@ -66,7 +66,7 @@ main{position:relative;z-index:1;padding:22px 20px 48px;max-width:640px;margin:0
 .item .nt{font-size:16px;margin-top:8px;padding:2px 0 2px 12px;border-left:2px solid var(--c);color:var(--ink)}
 .item .go{display:inline-block;margin-top:10px;font-size:17px;color:var(--c);background:var(--paper2);
   text-decoration:none;font-weight:700;letter-spacing:.15em;border:1px solid var(--c);
-  border-radius:3px;padding:8px 18px;min-height:44px}
+  border-radius:0;padding:8px 18px;min-height:44px}
 .item .go:active{background:var(--c);color:var(--paper2)}
 .k-move{--c:var(--move)}.k-eat{--c:var(--eat)}.k-see{--c:var(--see)}.k-stay{--c:var(--stay)}
 .stay{margin-top:6px;padding:14px 16px;background:var(--paper2);border:1px solid var(--line);
@@ -84,10 +84,10 @@ label.todo input{width:26px;height:26px;flex:none;margin-top:3px;accent-color:va
 label.todo input:checked+span{text-decoration:line-through;color:var(--sub)}
 .pager{display:flex;gap:12px;margin-top:26px}
 .pager button{flex:1;min-height:52px;background:none;color:var(--ink);font:inherit;font-weight:600;
-  letter-spacing:.15em;border:1px solid var(--sumi);border-radius:3px}
+  letter-spacing:.15em;border:1px solid var(--sumi);border-radius:0}
 .pager button:active{background:var(--sumi);color:var(--paper)}
 .pager button:disabled{opacity:.25}
-.stay .go{display:inline-block;margin-top:10px;font-size:17px;color:var(--kuri);background:var(--paper2);text-decoration:none;font-weight:700;letter-spacing:.15em;border:1px solid var(--kuri);border-radius:3px;padding:8px 18px;min-height:44px}
+.stay .go{display:inline-block;margin-top:10px;font-size:17px;color:var(--kuri);background:var(--paper2);text-decoration:none;font-weight:700;letter-spacing:.15em;border:1px solid var(--kuri);border-radius:0;padding:8px 18px;min-height:44px}
 
 /* 注意事項 accordion */
 details.acc summary{list-style:none;cursor:pointer;-webkit-tap-highlight-color:transparent}
@@ -107,10 +107,10 @@ details.acc summary::-webkit-details-marker{display:none}
 .stay .row>div{flex:1;min-width:0}
 .stay a.tel{color:var(--ai);font-weight:700;text-decoration:none;border-bottom:1px solid var(--ai)}
 .stay .go{margin-top:6px}
-.card .go{display:inline-block;margin-top:10px;font-size:17px;color:var(--ai);background:var(--paper2);text-decoration:none;font-weight:700;letter-spacing:.1em;border:1px solid var(--ai);border-radius:3px;padding:8px 18px;min-height:44px}
+.card .go{display:inline-block;margin-top:10px;font-size:17px;color:var(--ai);background:var(--paper2);text-decoration:none;font-weight:700;letter-spacing:.1em;border:1px solid var(--ai);border-radius:0;padding:8px 18px;min-height:44px}
 
 .lead{margin:0 0 12px}
-.prep-go{display:block;text-align:center;font-size:18px;color:var(--paper2);background:var(--sumi);text-decoration:none;font-weight:700;letter-spacing:.15em;border-radius:3px;padding:12px 18px;margin-bottom:8px}
+.prep-go{display:block;text-align:center;font-size:18px;color:var(--paper2);background:var(--sumi);text-decoration:none;font-weight:700;letter-spacing:.15em;border-radius:0;padding:12px 18px;margin-bottom:8px}
 .prep-info{border-top:3px double var(--kuri)}
 .prep-info .row{display:flex;gap:14px;padding:8px 0;border-bottom:1px dotted var(--line)}
 .prep-info .row>span{flex:none;width:4.2em;color:var(--kuri);font-weight:700;letter-spacing:.1em}
@@ -156,9 +156,9 @@ details.acc summary::-webkit-details-marker{display:none}
 }
 
 /* 按鈕：雙線框（外粗內細，像和紙標籤），重要的「查班次」是朱印 */
-.item .go,.stay .go,.card .go,.pager button{position:relative;border:1px solid currentColor;border-radius:3px;background:var(--paper2)}
+.item .go,.stay .go,.card .go,.pager button{position:relative;border:1px solid currentColor;border-radius:0;background:var(--paper2)}
 .item .go::before,.stay .go::before,.card .go::before,.pager button::before{content:"";position:absolute;inset:2px;
-  border:1px solid currentColor;border-radius:1px;opacity:.4;pointer-events:none}
+  border:1px solid currentColor;border-radius:0;opacity:.4;pointer-events:none}
 .item .go:active,.stay .go:active,.card .go:active,.pager button:active{transform:scale(.96);background:var(--paper2);color:inherit}
 .item .go:active{color:var(--c)}
 .pager button:active{color:var(--ink);background:var(--paper2)}
