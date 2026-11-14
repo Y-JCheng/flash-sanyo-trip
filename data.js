@@ -8,7 +8,7 @@ window.TRIP = {
     {
       id: "d1", date: "2026-11-15", label: "11/15", dow: "日",
       title: "抵達岡山・倉敷",
-      stay: { name: "NAGI 倉敷", jp: "NAGI倉敷（なぎ くらしき）", addr: "〒710-0055 岡山県倉敷市阿知1-14-3", tel: "080-5913-9349", note: "從倉敷站步行約 2 分鐘。入住 15:00–21:00，退房 11:00；9:00 起可寄放行李", url: "https://maps.app.goo.gl/8WZjf1Aa1LwgEMpy9" },
+      stay: { name: "NAGI 倉敷", jp: "NAGI倉敷（なぎ くらしき）", addr: "〒710-0055 岡山県倉敷市阿知1-14-3", tel: "080-5913-9349", checkin: "15:00–21:00", checkout: "11:00", note: "從倉敷站步行約 2 分鐘；9:00 起可寄放行李", url: "https://maps.app.goo.gl/8WZjf1Aa1LwgEMpy9" },
       items: [
         { t: "14:00 多", k: "move", text: "岡山機場落地", jp: "岡山桃太郎空港（おかやま ももたろう くうこう）", map: "岡山桃太郎空港" },
         { k: "move", text: "搭利木津巴士到倉敷站北口", jp: "リムジンバス → 倉敷駅北口（くらしきえき きたぐち）", note: "約 35 分鐘，¥1,150，可刷 ICOCA / Suica", map: "倉敷駅北口" },
@@ -20,7 +20,7 @@ window.TRIP = {
     {
       id: "d2", date: "2026-11-16", label: "11/16", dow: "一",
       title: "倉敷一日",
-      stay: { name: "NAGI 倉敷", jp: "NAGI倉敷（なぎ くらしき）", addr: "〒710-0055 岡山県倉敷市阿知1-14-3", tel: "080-5913-9349", note: "從倉敷站步行約 2 分鐘。入住 15:00–21:00，退房 11:00；9:00 起可寄放行李", url: "https://maps.app.goo.gl/8WZjf1Aa1LwgEMpy9" },
+      stay: { name: "NAGI 倉敷", jp: "NAGI倉敷（なぎ くらしき）", addr: "〒710-0055 岡山県倉敷市阿知1-14-3", tel: "080-5913-9349", checkin: "15:00–21:00", checkout: "11:00", note: "從倉敷站步行約 2 分鐘；9:00 起可寄放行李", url: "https://maps.app.goo.gl/8WZjf1Aa1LwgEMpy9" },
       items: [
         { t: "一早", k: "see", text: "到觀光案內所買川舟流船票", jp: "倉敷館観光案内所（くらしきかん かんこうあんないじょ）", note: "只賣當天票，早買才不會滿", map: "倉敷館観光案内所" },
         { t: "9:30–17:00", k: "see", text: "搭船遊倉敷川", jp: "くらしき川舟流し（くらしき かわふねながし）", note: "約 20 分鐘，¥700，每 30 分鐘一班", map: "くらしき川舟流し" },

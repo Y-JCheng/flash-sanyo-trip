@@ -49,17 +49,20 @@
         (it.t ? '<div class="t">' + esc(it.t) + "</div>" : "") +
         '<div class="tx">' + esc(it.text) + "</div>" +
         (it.jp ? '<div class="jp">' + esc(it.jp) + "</div>" : "") +
-        (it.note ? '<div class="nt">' + esc(it.note) + "</div>" : "") +
         ((it.url || it.map) ? '<a class="go" target="_blank" rel="noopener" href="' + esc(it.url || mapUrl(it.map)) + '">開地圖</a>' : "") +
+        (it.note ? '<details class="acc"><summary>注意事項</summary><div class="acc-b">' + esc(it.note) + "</div></details>" : "") +
         "</div></div>";
     }).join("");
     if (d.stay) {
-      h += '<div class="stay"><b>宿　今晚住：' + esc(d.stay.name) + "</b>" +
-        (d.stay.jp ? '<div class="jp">' + esc(d.stay.jp) + "</div>" : "") +
-        (d.stay.addr ? "<div>" + esc(d.stay.addr) + "</div>" : "") +
-        (d.stay.tel ? '<div>電話：<a href="tel:+81' + esc(d.stay.tel.replace(/^0/, "").replace(/-/g, "")) + '">' + esc(d.stay.tel) + "</a></div>" : "") +
-        (d.stay.note ? "<div>" + esc(d.stay.note) + "</div>" : "") +
-        (d.stay.url ? '<a class="go" target="_blank" rel="noopener" href="' + esc(d.stay.url) + '">開地圖</a>' : "") + "</div>";
+      var st = d.stay, row = function (k, v) { return '<div class="row"><span>' + k + "</span><div>" + v + "</div></div>"; };
+      var body = (st.addr ? row("地址", esc(st.addr) + '<br><a class="go" target="_blank" rel="noopener" href="' + esc(st.url || mapUrl(st.addr)) + '">開地圖</a>') : "") +
+        (st.checkin ? row("入住", esc(st.checkin)) : "") +
+        (st.checkout ? row("退房", esc(st.checkout)) : "") +
+        (st.tel ? row("電話", '<a class="tel" href="tel:+81' + esc(st.tel.replace(/^0/, "").replace(/-/g, "")) + '">' + esc(st.tel) + "</a>") : "") +
+        (st.note ? row("備註", esc(st.note)) : "");
+      h += '<details class="stay acc"><summary><b>宿　今晚住：' + esc(st.name) + "</b>" +
+        (st.jp ? '<div class="jp">' + esc(st.jp) + "</div>" : "") + "</summary>" +
+        (body ? '<div class="acc-b">' + body + "</div>" : "") + "</details>";
     }
     var ids = T.days.map(function (x) { return x.id; }), i = ids.indexOf(d.id);
     h += '<div class="pager"><button data-go="' + (i - 1) + '"' + (i === 0 ? " disabled" : "") + '>← 前一天</button>' +

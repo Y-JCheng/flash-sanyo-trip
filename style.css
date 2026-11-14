@@ -69,3 +69,22 @@ label.todo input:checked+span{text-decoration:line-through;color:var(--sub)}
 .pager button:active{background:var(--sumi);color:var(--paper)}
 .pager button:disabled{opacity:.25}
 .stay .go{display:inline-block;margin-top:10px;font-size:17px;color:var(--kuri);background:var(--paper2);text-decoration:none;font-weight:700;letter-spacing:.15em;border:1px solid var(--kuri);border-radius:3px;padding:8px 18px;min-height:44px}
+
+/* 注意事項 accordion */
+details.acc summary{list-style:none;cursor:pointer;-webkit-tap-highlight-color:transparent}
+details.acc summary::-webkit-details-marker{display:none}
+.item details.acc{margin-top:10px}
+.item details.acc summary{display:inline-flex;align-items:center;gap:6px;min-height:44px;padding:0 4px;
+  color:var(--sub);font-size:16px;letter-spacing:.15em;border-bottom:1px dotted var(--sub)}
+.item details.acc summary::after,.stay summary::after{content:"＋";font-size:18px;color:var(--c,var(--kuri))}
+.item details.acc[open] summary::after,.stay[open] summary::after{content:"－"}
+.acc-b{margin-top:6px;padding:8px 0 4px 12px;border-left:2px solid var(--c,var(--kuri));font-size:16px}
+.stay{position:relative}
+.stay summary{padding-right:34px}
+.stay summary::after{position:absolute;right:0;top:0}
+.stay .acc-b{border-left:0;padding-left:0;margin-top:10px;border-top:1px solid var(--line)}
+.stay .row{display:flex;gap:14px;padding:8px 0;border-bottom:1px dotted var(--line)}
+.stay .row>span{flex:none;width:2.6em;color:var(--kuri);font-weight:700;letter-spacing:.1em}
+.stay .row>div{flex:1;min-width:0}
+.stay a.tel{color:var(--ai);font-weight:700;text-decoration:none;border-bottom:1px solid var(--ai)}
+.stay .go{margin-top:6px}
