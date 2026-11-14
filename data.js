@@ -10,8 +10,8 @@ window.TRIP = {
       title: "抵達岡山・倉敷",
       stay: { name: "NAGI 倉敷", jp: "NAGI倉敷（なぎ くらしき）", addr: "〒710-0055 岡山県倉敷市阿知1-14-3", tel: "080-5913-9349", checkin: "15:00–21:00", checkout: "11:00", note: "從倉敷站步行約 2 分鐘；9:00 起可寄放行李", url: "https://maps.app.goo.gl/8WZjf1Aa1LwgEMpy9" },
       items: [
-        { t: "14:00 多", k: "move", text: "岡山機場落地", jp: "岡山桃太郎空港（おかやま ももたろう くうこう）", map: "岡山桃太郎空港" },
-        { k: "move", transit: true, text: "搭利木津巴士到倉敷站北口", jp: "リムジンバス → 倉敷駅北口（くらしきえき きたぐち）", note: "約 35 分鐘，¥1,150，可刷 ICOCA / Suica", map: "倉敷駅北口" },
+        { t: "15:05 抵達", k: "move", text: "搭 IT214 到岡山機場", jp: "岡山桃太郎空港（おかやま ももたろう くうこう）", note: "桃園 11:30 起飛，岡山 15:05 抵達（時刻依航空公司公告，出發前請再確認）。落地後要過入境審查、領行李，約需 1 小時。", map: "岡山桃太郎空港" },
+        { k: "move", transit: true, text: "搭利木津巴士到倉敷站北口", jp: "リムジンバス → 倉敷駅北口（くらしきえき きたぐち）", note: "約 35 分鐘，¥1,150，可刷 ICOCA / Suica。巴士班次請以機場當天公告為準。", map: "倉敷駅北口" },
         { k: "stay", text: "到飯店放行李", jp: "NAGI倉敷（なぎ くらしき）", note: "從倉敷站步行約 2 分鐘。入住 15:00–21:00，退房 11:00。還沒到入住時間也可以先寄放行李（9:00 起）。", url: "https://maps.app.goo.gl/8WZjf1Aa1LwgEMpy9" },
         { k: "see", text: "逛倉敷 outlet", jp: "三井アウトレットパーク倉敷（みつい アウトレットパーク くらしき）", map: "三井アウトレットパーク倉敷", links: [{ n: "樓層導覽 Floor Guide", u: "https://mitsui-shopping-park.com/mop/kurashiki/search/floor1f.html" }] },
         { k: "eat", text: "晚餐：鰆魚料理", jp: "鰆（さわら）料理", note: "記得訂位", map: "倉敷 鰆料理" }
