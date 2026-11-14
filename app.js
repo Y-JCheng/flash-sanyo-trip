@@ -50,7 +50,7 @@
         '<div class="tx">' + esc(it.text) + "</div>" +
         (it.jp ? '<div class="jp">' + esc(it.jp) + "</div>" : "") +
         (it.note ? '<div class="nt">' + esc(it.note) + "</div>" : "") +
-        (it.map ? '<a class="go" target="_blank" rel="noopener" href="' + mapUrl(it.map) + '">開地圖</a>' : "") +
+        ((it.url || it.map) ? '<a class="go" target="_blank" rel="noopener" href="' + esc(it.url || mapUrl(it.map)) + '">開地圖</a>' : "") +
         "</div></div>";
     }).join("");
     if (d.stay) {
