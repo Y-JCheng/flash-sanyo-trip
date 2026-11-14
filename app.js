@@ -56,7 +56,8 @@
     if (d.stay) {
       h += '<div class="stay"><b>宿　今晚住：' + esc(d.stay.name) + "</b>" +
         (d.stay.jp ? '<div class="jp">' + esc(d.stay.jp) + "</div>" : "") +
-        (d.stay.note ? "<div>" + esc(d.stay.note) + "</div>" : "") + "</div>";
+        (d.stay.note ? "<div>" + esc(d.stay.note) + "</div>" : "") +
+        (d.stay.url ? '<a class="go" target="_blank" rel="noopener" href="' + esc(d.stay.url) + '">開地圖</a>' : "") + "</div>";
     }
     var ids = T.days.map(function (x) { return x.id; }), i = ids.indexOf(d.id);
     h += '<div class="pager"><button data-go="' + (i - 1) + '"' + (i === 0 ? " disabled" : "") + '>← 前一天</button>' +

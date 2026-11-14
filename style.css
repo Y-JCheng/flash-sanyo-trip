@@ -68,3 +68,4 @@ label.todo input:checked+span{text-decoration:line-through;color:var(--sub)}
   letter-spacing:.15em;border:1px solid var(--sumi);border-radius:3px}
 .pager button:active{background:var(--sumi);color:var(--paper)}
 .pager button:disabled{opacity:.25}
+.stay .go{display:inline-block;margin-top:10px;font-size:17px;color:var(--kuri);background:var(--paper2);text-decoration:none;font-weight:700;letter-spacing:.15em;border:1px solid var(--kuri);border-radius:3px;padding:8px 18px;min-height:44px}
