@@ -131,7 +131,7 @@ window.TRIP = {
     {
       id: "d6", date: "2026-11-20", label: "11/20", dow: "五",
       title: "鞆之浦 → 岡山",
-      stay: { name: "岡山站附近", jp: "岡山駅（おかやまえき）", note: "住宿尚未填寫" },
+      stay: { name: "Airbnb（Ray Okayama）", jp: "奉還町（ほうかんちょう）Ray Okayama", addr: "〒700-0026 岡山県岡山市北区奉還町4-8-4 Ray Okayama", note: "Airbnb 的入住方式、時間和房東聯絡方式請看訂房訊息；抵達前先確認。", url: "https://maps.app.goo.gl/ohg2GcEE2YfRxL4m7" },
       items: [
         { k: "see", text: "早上慢慢逛鞆之浦：海港老街、常夜燈、福禪寺看海景", jp: "常夜燈（じょうやとう）／福禅寺（ふくぜんじ）", map: "福禅寺 対潮楼",
           recs: [
