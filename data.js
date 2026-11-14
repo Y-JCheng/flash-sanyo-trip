@@ -20,7 +20,8 @@ window.TRIP = {
           recs: [
             { g: "吃", list: [
               { n: "Bukkake-Udon Furuichi", d: "烏龍麵，在倉敷站附近", u: "https://maps.app.goo.gl/DBcD72uDRCX2Nbyc8" },
-              { n: "Okayama local cuisine TORAIYA", d: "岡山鄉土料理，在本町", u: "https://maps.app.goo.gl/3TbfURz2MdBjJmaNA" }
+              { n: "Okayama local cuisine TORAIYA", d: "岡山鄉土料理，在本町", u: "https://maps.app.goo.gl/3TbfURz2MdBjJmaNA"},
+              { n: "Ringer Hut（リンガーハット）", d: "長崎強棒麵，在 Ario 倉敷 2 樓美食街（寿町）", u: "https://maps.app.goo.gl/m5NEpMgkE7AqwzybA" }
             ] }
           ] }
       ]
