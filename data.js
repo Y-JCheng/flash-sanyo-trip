@@ -36,6 +36,7 @@ window.TRIP = {
             { g: "逛", list: [
               { n: "Heart Made Base", d: "日式傳統工藝單寧", u: "https://maps.app.goo.gl/9aeHgBtmybgEirwe7" },
               { n: "Hayashi Genjuro Shouten", d: "超好逛", u: "https://maps.app.goo.gl/kz4HjkCmfSQtc8s16" },
+              { n: "Chapeaugraphy（シャポーグラフィー）", d: "帽子店", u: "https://maps.app.goo.gl/fSgyf6wZbkpRetF98" },
               { n: "Morita Brewery", d: "酒造", u: "https://maps.app.goo.gl/rbnJ7bBPrQ1fDTco6" },
               { n: "UramadO Kurashiki", d: "包包", u: "https://maps.app.goo.gl/FkeXj9a1NJav8upa6" },
               { n: "Nyochiku-do", d: "紙膠帶", u: "https://maps.app.goo.gl/fMBv2GihN75bokGv7" }
