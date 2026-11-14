@@ -30,7 +30,14 @@ window.TRIP = {
       title: "倉敷一日",
       stay: { name: "NAGI 倉敷", jp: "NAGI倉敷（なぎ くらしき）", addr: "〒710-0055 岡山県倉敷市阿知1-14-3", tel: "080-5913-9349", checkin: "15:00–21:00", checkout: "11:00", note: "從倉敷站步行約 2 分鐘；9:00 起可寄放行李", url: "https://maps.app.goo.gl/8WZjf1Aa1LwgEMpy9" },
       items: [
-        { t: "早上", k: "eat", text: "早餐：Cafe Gewa", jp: "カフェ（Cafe Gewa）", note: "在倉敷站附近（阿知 2-23-10）。8:50 要到觀光案內所排隊買船票，早餐不要拖太晚。營業時間我還沒查，出發前請在地圖確認。", url: "https://maps.app.goo.gl/UUpP5hhbKaY1HeoV6" },
+        { t: "早上", k: "eat", text: "早餐：選下面其中一家", jp: "カフェ", note: "8:50 要到觀光案內所排隊買船票，早餐不要拖太晚。營業時間我還沒查，出發前請在地圖確認。",
+          map: "倉敷 カフェ",
+          recs: [
+            { g: "吃", list: [
+              { n: "Cafe Gewa", d: "在倉敷站附近（阿知 2-23-10）", u: "https://maps.app.goo.gl/UUpP5hhbKaY1HeoV6" },
+              { n: "cafe BISCUIT", d: "在本町（5-27）", u: "https://maps.app.goo.gl/3ZLZhNgRu6FftYnd9" }
+            ] }
+          ] },
         { t: "8:50 到・9:00 開賣", k: "see", text: "到觀光案內所買川舟流船票，開賣前 10 分鐘（8:50）先去排隊", jp: "倉敷館観光案内所（くらしきかん かんこうあんないじょ）", note: "9:00 開始賣票。只賣當天票，先到先買，早買才不會滿。", map: "倉敷館観光案内所" },
         { t: "9:30–17:00", k: "see", text: "搭船遊倉敷川", jp: "くらしき川舟流し（くらしき かわふねながし）", note: "約 20 分鐘，¥700，每 30 分鐘一班", map: "くらしき川舟流し" },
         { k: "see", text: "本町通、東町老街：帆布、雜貨、町家咖啡", jp: "本町通り（ほんまちどおり）・東町（ひがしまち）", map: "倉敷 本町通り",
