@@ -24,10 +24,12 @@
   }
 
   var tabs = T.days.map(function (d) { return { id: d.id, top: d.label, bot: "週" + d.dow }; });
+  tabs.unshift({ id: "prep", top: "行前", bot: "入境" });
   tabs.push({ id: "tips", top: "提醒", bot: "" }, { id: "todo", top: "待辦", bot: "" });
 
   var t = today();
   var current = (T.days.filter(function (d) { return d.date === t; })[0] || T.days[0]).id;
+  if (t < T.days[0].date) current = "prep";
   var saved = location.hash.slice(1);
   if (tabs.some(function (x) { return x.id === saved; })) current = saved;
 
@@ -78,6 +80,19 @@
     }).join("");
   }
 
+  function renderPrep() {
+    var P = T.prep, done = store("prep") || {};
+    return '<h2 class="sec">' + esc(P.title) + '</h2><p class="lead">' + esc(P.intro) + "</p>" +
+      '<a class="go prep-go" target="_blank" rel="noopener" href="' + esc(P.link) + '">' + esc(P.linkText) + "</a>" +
+      '<h2 class="sec">步驟</h2>' + P.steps.map(function (x, i) {
+        return '<label class="todo"><input type="checkbox" data-k="prep" data-i="' + i + '"' + (done[i] ? " checked" : "") +
+          '><span><b>' + (i + 1) + "．" + esc(x.h) + "</b><br>" + esc(x.p) + "</span></label>";
+      }).join("") +
+      '<h2 class="sec">要填的資料</h2><div class="stay prep-info">' + P.info.map(function (r) {
+        return '<div class="row"><span>' + esc(r.k) + "</span><div>" + esc(r.v) + "</div></div>";
+      }).join("") + "</div>";
+  }
+
   function renderTodo() {
     var done = store("todo") || {};
     return '<h2 class="sec">出發前待確認</h2>' + T.todos.map(function (x, i) {
@@ -90,6 +105,7 @@
     renderTabs();
     var v = $("#view");
     if (current === "tips") v.innerHTML = renderTips();
+    else if (current === "prep") v.innerHTML = renderPrep();
     else if (current === "todo") v.innerHTML = renderTodo();
     else v.innerHTML = renderDay(T.days.filter(function (d) { return d.id === current; })[0]);
     window.scrollTo(0, 0);
@@ -112,9 +128,10 @@
   $("#view").addEventListener("change", function (e) {
     var i = e.target.getAttribute("data-i");
     if (i === null) return;
-    var done = store("todo") || {};
+    var key = e.target.getAttribute("data-k") || "todo";
+    var done = store(key) || {};
     done[i] = e.target.checked;
-    store("todo", done);
+    store(key, done);
   });
 
   render();
