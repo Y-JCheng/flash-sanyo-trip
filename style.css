@@ -154,3 +154,19 @@ details.acc summary::-webkit-details-marker{display:none}
 @media (prefers-color-scheme:dark){
   .item .seal,.rg h4,.item .go.app{color:#10182a}
 }
+
+/* 按鈕：毛筆畫的邊框（邊線用 SVG 濾鏡做出手繪的粗細和飛白），重要按鈕是朱印 */
+.item .go,.stay .go,.card .go,.pager button{position:relative;border:0;background:var(--paper2)}
+.item .go::before,.stay .go::before,.card .go::before,.pager button::before{content:"";position:absolute;inset:0;
+  border:2.6px solid currentColor;border-radius:4px;filter:url(#brush);pointer-events:none}
+.item .go:active,.stay .go:active,.card .go:active,.pager button:active{transform:scale(.96);background:var(--paper2);color:inherit}
+.item .go:active{color:var(--c)}
+.pager button:active{color:var(--ink);background:var(--paper2)}
+.item .go.app,.item .go.app:active{background:var(--shu);color:#fbf3e4;border-radius:4px;box-shadow:0 1px 0 rgba(0,0,0,.18)}
+.item .go.app::before{inset:3px;border:1.6px solid rgba(251,243,228,.7);border-radius:2px}
+.item .go.app:active{transform:scale(.96);filter:brightness(.88)}
+.pager button:disabled::before{opacity:.8}
+@media (prefers-color-scheme:dark){
+  .item .go.app{color:#fff3de}
+  .item .go,.stay .go,.card .go,.pager button{box-shadow:0 0 10px rgba(240,169,90,.10)}
+}
