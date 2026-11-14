@@ -51,10 +51,10 @@ window.TRIP = {
     {
       id: "d3", date: "2026-11-17", label: "11/17", dow: "二",
       title: "尾道市區",
-      stay: { name: "福山", jp: "福山（ふくやま）", note: "飯店尚未填寫；福山到尾道搭 JR 約 20 分鐘" },
+      stay: { name: "Vessel Inn 福山站前", jp: "ベッセルイン福山駅前（ふくやまえきまえ）", addr: "〒720-0061 広島県福山市丸之内1-2-1", note: "就在福山站旁；入住、退房時間和電話還沒查到，請看訂房確認信。福山到尾道搭 JR 約 20 分鐘。", url: "https://maps.app.goo.gl/r5q5sRht3252f2et7" },
       items: [
         { k: "move", transit: true, text: "倉敷搭 JR 到福山", jp: "倉敷駅（くらしきえき）→ 福山駅（ふくやまえき）", map: "福山駅" },
-        { k: "stay", text: "到飯店寄放行李", jp: "福山（ふくやま）", note: "飯店尚未填寫；訂好後會補上地址、入住時間和電話。大行李先放飯店，出門只帶隨身包。" },
+        { k: "stay", text: "到飯店寄放行李", jp: "ベッセルイン福山駅前（ふくやまえきまえ）", note: "就在福山站旁。大行李先放飯店，出門只帶隨身包。入住時間請看訂房確認信。", url: "https://maps.app.goo.gl/r5q5sRht3252f2et7" },
         { k: "move", transit: true, text: "福山搭 JR 到尾道（約 20 分）", jp: "福山駅（ふくやまえき）→ 尾道駅（おのみちえき）", map: "尾道駅" },
         { k: "eat", text: "午餐：尾道拉麵 Onomichi Ramen Kuukai", jp: "尾道ラーメン（おのみち ラーメン）", note: "可以邊看海邊吃。推薦大家共點一份炒飯。", url: "https://maps.app.goo.gl/pHHmYL4QujtAEuY7A" },
         { k: "see", text: "搭纜車上千光寺公園看海景，再沿坡道慢慢走下來", jp: "千光寺（せんこうじ）公園", map: "千光寺公園",
@@ -92,7 +92,7 @@ window.TRIP = {
     {
       id: "d4", date: "2026-11-18", label: "11/18", dow: "三",
       title: "生口島一日遊",
-      stay: { name: "福山", jp: "福山（ふくやま）", note: "飯店尚未填寫；尾道回福山搭 JR 約 20 分鐘" },
+      stay: { name: "Vessel Inn 福山站前", jp: "ベッセルイン福山駅前（ふくやまえきまえ）", addr: "〒720-0061 広島県福山市丸之内1-2-1", note: "就在福山站旁；入住、退房時間和電話還沒查到，請看訂房確認信。尾道回福山搭 JR 約 20 分鐘。", url: "https://maps.app.goo.gl/r5q5sRht3252f2et7" },
       items: [
         { k: "move", transit: true, text: "尾道站前碼頭搭船到瀨戶田港", jp: "尾道 → 瀬戸田港（せとだこう）", note: "約 40 分鐘，一天約 6 班來回，先記好回程班次", map: "瀬戸田港" },
         { t: "9:00–17:00", k: "see", text: "耕三寺 ＋ 白色大理石庭園「未來心之丘」", jp: "耕三寺（こうさんじ）／未来心の丘（みらいこころのおか）", note: "逛約 1.5–2 小時；紅葉季，早點去人較少", map: "耕三寺" },
