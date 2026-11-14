@@ -27,7 +27,7 @@ html{-webkit-text-size-adjust:100%}
 body{margin:0;background:var(--paper) var(--grain);color:var(--ink);
   font:20px/1.75 "WenKai","Kaiti TC","BiauKai","Hiragino Mincho ProN","Noto Serif TC",serif;
   padding-bottom:env(safe-area-inset-bottom)}
-.top{position:relative;height:230px;padding:0;overflow:hidden}
+.top{position:relative;z-index:1;height:230px;padding:0;overflow:hidden}
 .top::before{content:"";position:absolute;inset:0;background:var(--ink-hills) left bottom/cover no-repeat;
   -webkit-mask-image:linear-gradient(to right,#000 35%,transparent 85%);mask-image:linear-gradient(to right,#000 35%,transparent 85%)}
 .top h1{position:absolute;right:24px;top:calc(16px + env(safe-area-inset-top));margin:0;
@@ -47,7 +47,7 @@ nav#tabs::-webkit-scrollbar{display:none}
 #tabs button.on{color:var(--ink);font-weight:700}
 #tabs button.on::after{content:"";position:absolute;left:50%;bottom:4px;width:7px;height:7px;
   margin-left:-3px;background:var(--shu);border-radius:50% 45% 55% 50%}
-main{padding:22px 20px 48px;max-width:640px;margin:0 auto}
+main{position:relative;z-index:1;padding:22px 20px 48px;max-width:640px;margin:0 auto}
 .day-h{margin:0 0 22px;padding-bottom:14px;background:var(--brush) left bottom/100% 8px no-repeat}
 .day-h h2{margin:0;font-size:27px;font-weight:700;letter-spacing:.08em}
 .day-h .today{display:inline-block;margin-left:10px;vertical-align:middle;font-size:13px;
@@ -129,3 +129,23 @@ details.acc summary::-webkit-details-marker{display:none}
 .who .w:last-child{border-bottom:0}
 .who b{flex:none;width:5.2em;color:var(--kuri);letter-spacing:.05em}
 .who span{flex:1;min-width:0}
+
+/* 背景飄落的楓葉、橘子、檸檬 */
+#fall{position:fixed;inset:0;z-index:0;pointer-events:none;overflow:hidden;opacity:.11}
+#fall i{position:absolute;top:-60px;display:block;will-change:transform;
+  animation:fall linear infinite}
+#fall svg{width:100%;height:100%;display:block;fill:currentColor}
+#fall .maple{color:#b8392b}
+#fall .orange{color:#d9822b}
+#fall .lemon{color:#c9a800}
+@keyframes fall{
+  0%{transform:translate3d(0,-8vh,0) rotate(0deg)}
+  50%{transform:translate3d(var(--dx),55vh,0) rotate(180deg)}
+  100%{transform:translate3d(0,112vh,0) rotate(360deg)}
+}
+@media (prefers-color-scheme:dark){
+  #fall{opacity:.13}
+  #fall .maple{color:#e0603a}
+  #fall .lemon{color:#f0d25a}
+}
+@media (prefers-reduced-motion:reduce){#fall{display:none}}
