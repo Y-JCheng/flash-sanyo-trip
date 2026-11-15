@@ -127,6 +127,7 @@ window.TRIP = {
             ] }
           ] },
         { k: "move", transit: true, text: "下午搭巴士回尾道站", jp: "瀬戸田港（せとだこう）→ 尾道駅（おのみちえき）", note: "搭「おのみちバス」（尾道駅～瀬戸田港線），巴士也會經過耕三寺附近。請用交通 App 或 Google 地圖查班次，並且先記好最後一班的時間。", map: "瀬戸田港" },
+        { k: "see", text: "買伴手禮：Omiyagekaido Onomichi", jp: "", url: "https://maps.app.goo.gl/PwvsznoNKQ5zCUFv5" },
         { k: "eat", text: "晚餐：尾道横丁，吃新鮮海產；飯後散步港邊", jp: "尾道横丁（おのみち よこちょう）", url: "https://maps.app.goo.gl/hdomUNVhk3bftwjC8" }
       ]
     },
