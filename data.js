@@ -100,8 +100,7 @@ window.TRIP = {
               { n: "Keima Kamaboko store（桂馬蒲鉾商店）", d: "特產魚板店", u: "https://maps.app.goo.gl/TA1qHYayc1Z2tfg18" },
               { n: "Onomichi Guest House Anago-no-Nedoko（尾道ゲストハウス あなごのねどこ）", d: "地圖是這家旅館；旁邊的小巷子走進去到底，有一間很可愛的小書店", u: "https://maps.app.goo.gl/bEccnZ8UqJDVm55L6" }
             ] }
-          ] },
-        { k: "eat", text: "晚餐：尾道横丁，吃新鮮海產", jp: "尾道横丁（おのみち よこちょう）", url: "https://maps.app.goo.gl/hdomUNVhk3bftwjC8" }
+          ] }
       ]
     },
     {
@@ -128,7 +127,7 @@ window.TRIP = {
             ] }
           ] },
         { k: "move", transit: true, text: "下午搭巴士回尾道站", jp: "瀬戸田港（せとだこう）→ 尾道駅（おのみちえき）", note: "搭「おのみちバス」（尾道駅～瀬戸田港線），巴士也會經過耕三寺附近。請用交通 App 或 Google 地圖查班次，並且先記好最後一班的時間。", map: "瀬戸田港" },
-        { k: "eat", text: "晚上在尾道吃晚餐、散步港邊", jp: "尾道（おのみち）", map: "尾道港" }
+        { k: "eat", text: "晚餐：尾道横丁，吃新鮮海產；飯後散步港邊", jp: "尾道横丁（おのみち よこちょう）", url: "https://maps.app.goo.gl/hdomUNVhk3bftwjC8" }
       ]
     },
     {
