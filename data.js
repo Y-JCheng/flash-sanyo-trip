@@ -74,9 +74,9 @@ window.TRIP = {
         { k: "see", text: "搭纜車上千光寺公園看海景，再沿坡道慢慢走下來", jp: "千光寺（せんこうじ）公園", map: "千光寺公園",
           recs: [
             { g: "吃", list: [
-              { n: "Petit Anon", d: "和式義大利麵", u: "https://maps.app.goo.gl/f4nAMH4RzuSY9rjS8" },
+              { n: "Petit Anon（プティアノン）", d: "和式義大利麵", u: "https://maps.app.goo.gl/f4nAMH4RzuSY9rjS8" },
               { n: "Nekonotepan factory（ネコノテパン工場）", d: "迷你麵包專賣", u: "https://maps.app.goo.gl/S58jVTyF3LuAUCHaA" },
-              { n: "Hanutei", d: "老屋甜點", u: "https://maps.app.goo.gl/8Uay9e1SYgFNKxyQ9" }
+              { n: "Hanutei（帆雨亭）", d: "老屋甜點", u: "https://maps.app.goo.gl/8Uay9e1SYgFNKxyQ9" }
             ] },
             { g: "喝", list: [
               { n: "Atmosphere（アトモスフィア）", d: "荒廢公寓改建的流行咖啡廳", u: "https://maps.app.goo.gl/cpEbgXw99jvAVxE86" },
@@ -86,7 +86,7 @@ window.TRIP = {
         { k: "see", text: "尾道本通商店街、海邊步道", jp: "尾道本通り商店街（おのみち ほんどおり しょうてんがい）", map: "尾道本通り商店街",
           recs: [
             { g: "吃", list: [
-              { n: "Five", d: "餐廳", u: "https://maps.app.goo.gl/TbhFrEd9oWy1hcgt6" },
+              { n: "Five（ファイブ）", d: "餐廳", u: "https://maps.app.goo.gl/TbhFrEd9oWy1hcgt6" },
               { n: "Takahara Seikichi diner（高原誠吉食堂）", d: "餐廳", u: "https://maps.app.goo.gl/zPLD97Y7KJBLu1na6" },
               { n: "Koro Bakery（パン屋航路）", d: "麵包店", u: "https://maps.app.goo.gl/BUMivwGyg8HCRmng6" },
               { n: "Oyatsu-to-Yamaneko（おやつとやまねこ）", d: "尾道布丁", u: "https://maps.app.goo.gl/BGihGvvSS5VHHCq58" },
