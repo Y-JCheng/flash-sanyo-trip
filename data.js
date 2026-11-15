@@ -75,11 +75,11 @@ window.TRIP = {
           recs: [
             { g: "吃", list: [
               { n: "Petit Anon", d: "和式義大利麵", u: "https://maps.app.goo.gl/f4nAMH4RzuSY9rjS8" },
-              { n: "Nekonotepan factory", d: "迷你麵包專賣", u: "https://maps.app.goo.gl/S58jVTyF3LuAUCHaA" },
+              { n: "Nekonotepan factory（ネコノテパン工場）", d: "迷你麵包專賣", u: "https://maps.app.goo.gl/S58jVTyF3LuAUCHaA" },
               { n: "Hanutei", d: "老屋甜點", u: "https://maps.app.goo.gl/8Uay9e1SYgFNKxyQ9" }
             ] },
             { g: "喝", list: [
-              { n: "Atmosphere", d: "荒廢公寓改建的流行咖啡廳", u: "https://maps.app.goo.gl/cpEbgXw99jvAVxE86" },
+              { n: "Atmosphere（アトモスフィア）", d: "荒廢公寓改建的流行咖啡廳", u: "https://maps.app.goo.gl/cpEbgXw99jvAVxE86" },
               { n: "Tea Stand Yamate (Tea Factory Gen)", d: "日式茶館", u: "https://maps.app.goo.gl/kB4xtuJhbhz3Noy59" }
             ] }
           ] },
@@ -87,18 +87,18 @@ window.TRIP = {
           recs: [
             { g: "吃", list: [
               { n: "Five", d: "餐廳", u: "https://maps.app.goo.gl/TbhFrEd9oWy1hcgt6" },
-              { n: "Takahara Seikichi diner", d: "餐廳", u: "https://maps.app.goo.gl/zPLD97Y7KJBLu1na6" },
-              { n: "Koro Bakery", d: "麵包店", u: "https://maps.app.goo.gl/BUMivwGyg8HCRmng6" },
-              { n: "Oyatsu-to-Yamaneko", d: "尾道布丁", u: "https://maps.app.goo.gl/BGihGvvSS5VHHCq58" },
-              { n: "Karasawa Ice Cream", d: "冰淇淋最中", u: "https://maps.app.goo.gl/hJECQAJ6MNzV8Z2dA" }
+              { n: "Takahara Seikichi diner（高原誠吉食堂）", d: "餐廳", u: "https://maps.app.goo.gl/zPLD97Y7KJBLu1na6" },
+              { n: "Koro Bakery（パン屋航路）", d: "麵包店", u: "https://maps.app.goo.gl/BUMivwGyg8HCRmng6" },
+              { n: "Oyatsu-to-Yamaneko（おやつとやまねこ）", d: "尾道布丁", u: "https://maps.app.goo.gl/BGihGvvSS5VHHCq58" },
+              { n: "Karasawa Ice Cream（からさわ）", d: "冰淇淋最中", u: "https://maps.app.goo.gl/hJECQAJ6MNzV8Z2dA" }
             ] },
             { g: "喝", list: [
-              { n: "Mexico", d: "昭和咖啡", u: "https://maps.app.goo.gl/8aXyfk1tNsuyzZGa6" },
+              { n: "Mexico（メキシコ）", d: "昭和咖啡", u: "https://maps.app.goo.gl/8aXyfk1tNsuyzZGa6" },
               { n: "POUR specialty coffee", d: "外帶咖啡", u: "https://maps.app.goo.gl/FLdHpMc2waoCqZH36" }
             ] },
             { g: "逛", list: [
-              { n: "Keima Kamaboko store", d: "特產魚板店", u: "https://maps.app.goo.gl/TA1qHYayc1Z2tfg18" },
-              { n: "Onomichi Guest House Anago-no-Nedoko", d: "地圖是這家旅館；旁邊的小巷子走進去到底，有一間很可愛的小書店", u: "https://maps.app.goo.gl/bEccnZ8UqJDVm55L6" }
+              { n: "Keima Kamaboko store（桂馬蒲鉾商店）", d: "特產魚板店", u: "https://maps.app.goo.gl/TA1qHYayc1Z2tfg18" },
+              { n: "Onomichi Guest House Anago-no-Nedoko（尾道ゲストハウス あなごのねどこ）", d: "地圖是這家旅館；旁邊的小巷子走進去到底，有一間很可愛的小書店", u: "https://maps.app.goo.gl/bEccnZ8UqJDVm55L6" }
             ] }
           ] }
       ]
