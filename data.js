@@ -114,16 +114,16 @@ window.TRIP = {
         { k: "eat", text: "瀨戶田潮町商店街：檸檬鍋、檸檬蛋糕、檸檬冰淇淋", jp: "瀬戸田しおまち商店街（せとだ しおまち しょうてんがい）／レモン", map: "瀬戸田しおまち商店街",
           recs: [
             { g: "吃", list: [
-              { n: "Chidori", d: "檸檬鍋", u: "https://maps.app.goo.gl/nehoFYj96qHxkFvW9" },
-              { n: "Shimagokoro SETODA Honten", d: "檸檬蛋糕", u: "https://maps.app.goo.gl/ESzwg83VdHgzTD4d6" },
-              { n: "Setoda Baigetsudou", d: "柑橘大福", u: "https://maps.app.goo.gl/Hkay8LhuoC7p3iPbA" }
+              { n: "Chidori（ちどり）", d: "檸檬鍋", u: "https://maps.app.goo.gl/nehoFYj96qHxkFvW9" },
+              { n: "Shimagokoro SETODA Honten（島ごころ SETODA 本店）", d: "檸檬蛋糕", u: "https://maps.app.goo.gl/ESzwg83VdHgzTD4d6" },
+              { n: "Setoda Baigetsudou（梅月堂）", d: "柑橘大福", u: "https://maps.app.goo.gl/Hkay8LhuoC7p3iPbA" }
             ] },
             { g: "喝", list: [
               { n: "檸檬汁（瀨戶田町 530-3）", d: "地圖上沒有店名；地址 530-3，和 Chidori（530-2）很近", u: "https://maps.app.goo.gl/AHNNADFpNuppj6Qz5" },
-              { n: "SOIL Setoda", d: "咖啡廳，有好風景", u: "https://maps.app.goo.gl/i4B2ZKV8a2P3v9Mi7" }
+              { n: "SOIL Setoda（ソイル瀬戸田）", d: "咖啡廳，有好風景", u: "https://maps.app.goo.gl/i4B2ZKV8a2P3v9Mi7" }
             ] },
             { g: "玩", list: [
-              { n: "yubune", d: "錢湯", u: "https://maps.app.goo.gl/hEjUjaSaXiGZ6GGg9" }
+              { n: "yubune（ユブネ）", d: "錢湯", u: "https://maps.app.goo.gl/hEjUjaSaXiGZ6GGg9" }
             ] }
           ] },
         { k: "move", transit: true, text: "下午搭巴士回尾道站", jp: "瀬戸田港（せとだこう）→ 尾道駅（おのみちえき）", note: "搭「おのみちバス」（尾道駅～瀬戸田港線），巴士也會經過耕三寺附近。請用交通 App 或 Google 地圖查班次，並且先記好最後一班的時間。", map: "瀬戸田港" },
