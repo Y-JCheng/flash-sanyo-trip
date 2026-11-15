@@ -80,7 +80,7 @@ window.TRIP = {
             ] },
             { g: "喝", list: [
               { n: "Atmosphere（アトモスフィア）", d: "荒廢公寓改建的流行咖啡廳", u: "https://maps.app.goo.gl/cpEbgXw99jvAVxE86" },
-              { n: "Tea Stand Yamate (Tea Factory Gen)", d: "日式茶館", u: "https://maps.app.goo.gl/kB4xtuJhbhz3Noy59" }
+              { n: "Tea Stand Yamate (Tea Factory Gen)（茶立玄 山手）", d: "日式茶館", u: "https://maps.app.goo.gl/kB4xtuJhbhz3Noy59" }
             ] }
           ] },
         { k: "see", text: "尾道本通商店街、海邊步道", jp: "尾道本通り商店街（おのみち ほんどおり しょうてんがい）", map: "尾道本通り商店街",
