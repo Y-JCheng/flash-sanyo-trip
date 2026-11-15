@@ -30,15 +30,13 @@ window.TRIP = {
       title: "倉敷一日",
       stay: { name: "NAGI 倉敷", jp: "NAGI倉敷（なぎ くらしき）", addr: "〒710-0055 岡山県倉敷市阿知1-14-3", tel: "080-5913-9349", checkin: "15:00–21:00", checkout: "11:00", note: "從倉敷站步行約 2 分鐘；9:00 起可寄放行李", url: "https://maps.app.goo.gl/8WZjf1Aa1LwgEMpy9" },
       items: [
-        { t: "早上", k: "eat", text: "早餐：選下面其中一家", note: "8:50 要到觀光案內所排隊買船票，早餐不要拖太晚。",
+        { t: "早上", k: "eat", text: "早餐：選下面其中一家", 
           recs: [
             { g: "吃", list: [
               { n: "Cafe Gewa", d: "在美觀地區，很近", u: "https://maps.app.goo.gl/UUpP5hhbKaY1HeoV6" },
               { n: "cafe BISCUIT", d: "在美觀地區，很近", u: "https://maps.app.goo.gl/3ZLZhNgRu6FftYnd9" }
             ] }
           ] },
-        { t: "8:50 到・9:00 開賣", k: "see", text: "到觀光案內所買川舟流船票，開賣前 10 分鐘（8:50）先去排隊", jp: "倉敷館観光案内所（くらしきかん かんこうあんないじょ）", note: "9:00 開始賣票。只賣當天票，先到先買，早買才不會滿。", map: "倉敷館観光案内所" },
-        { t: "9:30–17:00", k: "see", text: "搭船遊倉敷川", jp: "くらしき川舟流し（くらしき かわふねながし）", note: "約 20 分鐘，¥700，每 30 分鐘一班", map: "くらしき川舟流し" },
         { k: "see", text: "本町通、東町老街：帆布、雜貨、町家咖啡", jp: "本町通り（ほんまちどおり）・東町（ひがしまち）", map: "倉敷 本町通り",
           recs: [
             { g: "吃", list: [
@@ -60,6 +58,7 @@ window.TRIP = {
               { n: "Kurashiki Yoimachi Garden", d: "小竹林", u: "https://maps.app.goo.gl/zDV4HL1XtAJxUH2n7" }
             ] }
           ] },
+        { t: "16:30", k: "see", text: "搭船遊倉敷川（已預約）", jp: "くらしき川舟流し（くらしき かわふねながし）", note: "已預約 16:30 開船，5 人，¥1,000 × 5，已用信用卡付款。船程約 20 分鐘，請提早到乘船處。船程結束後，17:00 要到 Sawaraya 用餐。", map: "くらしき川舟流し" },
         { t: "17:00", k: "eat", text: "晚餐：Sawaraya（鰆魚料理），飯後散步看夜間點燈", jp: "鰆（さわら）料理", note: "已訂位，17:00 入座。", url: "https://maps.app.goo.gl/pXb3qbkBSfRtVBzR7" }
       ]
     },
