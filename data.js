@@ -119,7 +119,7 @@ window.TRIP = {
               { n: "Setoda Baigetsudou（梅月堂）", d: "柑橘大福", u: "https://maps.app.goo.gl/Hkay8LhuoC7p3iPbA" }
             ] },
             { g: "喝", list: [
-              { n: "檸檬汁（瀨戶田町 530-3）", d: "地圖上沒有店名；地址 530-3，和 Chidori（530-2）很近", u: "https://maps.app.goo.gl/AHNNADFpNuppj6Qz5" },
+              { n: "HYAKKOYA（ひゃっこや）", d: "檸檬汁，外帶專賣店。招牌是「世界にひとつだけのレモネード」，和 Chidori 很近", u: "https://maps.app.goo.gl/AHNNADFpNuppj6Qz5" },
               { n: "SOIL Setoda（ソイル瀬戸田）", d: "咖啡廳，有好風景", u: "https://maps.app.goo.gl/i4B2ZKV8a2P3v9Mi7" }
             ] },
             { g: "玩", list: [
