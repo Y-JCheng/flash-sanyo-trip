@@ -33,8 +33,8 @@ window.TRIP = {
         { t: "早上", k: "eat", text: "早餐：選下面其中一家", 
           recs: [
             { g: "吃", list: [
-              { n: "Cafe Gewa", d: "在美觀地區，很近", u: "https://maps.app.goo.gl/UUpP5hhbKaY1HeoV6" },
-              { n: "cafe BISCUIT", d: "在美觀地區，很近", u: "https://maps.app.goo.gl/3ZLZhNgRu6FftYnd9" }
+              { n: "Cafe Gewa（カフェ ゲバ）", d: "在美觀地區，很近", u: "https://maps.app.goo.gl/UUpP5hhbKaY1HeoV6" },
+              { n: "cafe BISCUIT（カフェ ビスキュイ）", d: "在美觀地區，很近", u: "https://maps.app.goo.gl/3ZLZhNgRu6FftYnd9" }
             ] }
           ] },
         { k: "see", text: "本町通、東町老街：帆布、雜貨、町家咖啡", jp: "本町通り（ほんまちどおり）・東町（ひがしまち）", map: "倉敷 本町通り",
@@ -42,20 +42,20 @@ window.TRIP = {
             { g: "吃", list: [
               { n: "おむすびとくんせい", u: "https://maps.app.goo.gl/2Qc2iQrVtRhKh2wJA" },
               { n: "Curry Bread Specialty Shop Shirakabe", d: "咖哩麵包和可樂餅", u: "https://maps.app.goo.gl/wLYsgov1nDj3viVKA" },
-              { n: "Yuurin-an Guesthouse & Cafe", d: "下午茶或午餐", u: "https://maps.app.goo.gl/cbWsZSbJwZ9wX8x96" },
+              { n: "Yuurin-an Guesthouse & Cafe（有鄰庵 ゆうりんあん）", d: "下午茶或午餐", u: "https://maps.app.goo.gl/cbWsZSbJwZ9wX8x96" },
               { n: "Ivy West Gate", d: "冰淇淋", u: "https://maps.app.goo.gl/2XE13dPSNZx86RA7A" },
               { n: "Irodori", d: "天婦羅", u: "https://maps.app.goo.gl/83oVFm8Wz3t5bEVN6" }
             ] },
             { g: "逛", list: [
               { n: "Heart Made Base", d: "日式傳統工藝單寧", u: "https://maps.app.goo.gl/9aeHgBtmybgEirwe7" },
-              { n: "Hayashi Genjuro Shouten", d: "超好逛", u: "https://maps.app.goo.gl/kz4HjkCmfSQtc8s16" },
+              { n: "Hayashi Genjuro Shouten（林源十郎商店 はやし げんじゅうろう しょうてん）", d: "超好逛", u: "https://maps.app.goo.gl/kz4HjkCmfSQtc8s16" },
               { n: "Chapeaugraphy（シャポーグラフィー）", d: "帽子店", u: "https://maps.app.goo.gl/fSgyf6wZbkpRetF98" },
-              { n: "Morita Brewery", d: "酒造", u: "https://maps.app.goo.gl/rbnJ7bBPrQ1fDTco6" },
+              { n: "Morita Brewery（森田酒造 もりた しゅぞう）", d: "酒造", u: "https://maps.app.goo.gl/rbnJ7bBPrQ1fDTco6" },
               { n: "UramadO Kurashiki", d: "包包", u: "https://maps.app.goo.gl/FkeXj9a1NJav8upa6" },
               { n: "Nyochiku-do", d: "紙膠帶", u: "https://maps.app.goo.gl/fMBv2GihN75bokGv7" }
             ] },
             { g: "參觀", list: [
-              { n: "Kurashiki Yoimachi Garden", d: "小竹林", u: "https://maps.app.goo.gl/zDV4HL1XtAJxUH2n7" }
+              { n: "Kurashiki Yoimachi Garden（くらしき宵待ちGARDEN）", d: "小竹林", u: "https://maps.app.goo.gl/zDV4HL1XtAJxUH2n7" }
             ] }
           ] },
         { t: "16:30", k: "see", text: "搭船遊倉敷川（已預約）", jp: "くらしき川舟流し（くらしき かわふねながし）", note: "已預約 16:30 開船，5 人，¥1,000 × 5，已用信用卡付款。船程約 20 分鐘，請提早到乘船處。船程結束後，17:00 要到 Sawaraya 用餐。", map: "くらしき川舟流し" },
