@@ -1,5 +1,5 @@
 // 離線快取：先看網路最新版，沒網路時用快取
-var CACHE = "sanyo-v74";
+var CACHE = "sanyo-v75";
 var FILES = ["./", "index.html", "style.css", "app.js", "data.js", "icon.svg", "manifest.webmanifest", "fonts/wenkai-regular.woff2", "fonts/wenkai-bold.woff2"];
 
 self.addEventListener("install", function (e) {

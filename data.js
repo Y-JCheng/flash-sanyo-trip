@@ -41,18 +41,18 @@ window.TRIP = {
           recs: [
             { g: "吃", list: [
               { n: "おむすびとくんせい", u: "https://maps.app.goo.gl/2Qc2iQrVtRhKh2wJA" },
-              { n: "Curry Bread Specialty Shop Shirakabe", d: "咖哩麵包和可樂餅", u: "https://maps.app.goo.gl/wLYsgov1nDj3viVKA" },
+              { n: "Curry Bread Specialty Shop Shirakabe（カレーパン専門店SHIRAKABE）", d: "咖哩麵包和可樂餅", u: "https://maps.app.goo.gl/wLYsgov1nDj3viVKA" },
               { n: "Yuurin-an Guesthouse & Cafe（有鄰庵 ゆうりんあん）", d: "下午茶或午餐", u: "https://maps.app.goo.gl/cbWsZSbJwZ9wX8x96" },
               { n: "Ivy West Gate", d: "冰淇淋", u: "https://maps.app.goo.gl/2XE13dPSNZx86RA7A" },
-              { n: "Irodori", d: "天婦羅", u: "https://maps.app.goo.gl/83oVFm8Wz3t5bEVN6" }
+              { n: "Irodori（膳の華 彩）", d: "天婦羅", u: "https://maps.app.goo.gl/83oVFm8Wz3t5bEVN6" }
             ] },
             { g: "逛", list: [
               { n: "Heart Made Base", d: "日式傳統工藝單寧", u: "https://maps.app.goo.gl/9aeHgBtmybgEirwe7" },
               { n: "Hayashi Genjuro Shouten（林源十郎商店 はやし げんじゅうろう しょうてん）", d: "超好逛", u: "https://maps.app.goo.gl/kz4HjkCmfSQtc8s16" },
               { n: "Chapeaugraphy（シャポーグラフィー）", d: "帽子店", u: "https://maps.app.goo.gl/fSgyf6wZbkpRetF98" },
               { n: "Morita Brewery（森田酒造 もりた しゅぞう）", d: "酒造", u: "https://maps.app.goo.gl/rbnJ7bBPrQ1fDTco6" },
-              { n: "UramadO Kurashiki", d: "包包", u: "https://maps.app.goo.gl/FkeXj9a1NJav8upa6" },
-              { n: "Nyochiku-do", d: "紙膠帶", u: "https://maps.app.goo.gl/fMBv2GihN75bokGv7" }
+              { n: "UramadO Kurashiki（ウラマド クラシキ）", d: "包包", u: "https://maps.app.goo.gl/FkeXj9a1NJav8upa6" },
+              { n: "Nyochiku-do（如竹堂）", d: "紙膠帶", u: "https://maps.app.goo.gl/fMBv2GihN75bokGv7" }
             ] },
             { g: "參觀", list: [
               { n: "Kurashiki Yoimachi Garden（くらしき宵待ちGARDEN）", d: "小竹林", u: "https://maps.app.goo.gl/zDV4HL1XtAJxUH2n7" }
